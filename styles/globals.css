@@ -2,29 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-	padding: 0;
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+html {
+	background-color: #1a1a1a;
+	color: #fff;
 }
 
-a {
-	color: inherit;
-	text-decoration: none;
+.active {
+	position: relative;
 }
 
-* {
-	box-sizing: border-box;
+.active::after {
+	content: '';
+	position: absolute;
+	height: 4px;
+	width: calc(100% - 32px);
+	bottom: 8px;
+	left: 16px;
+	background: linear-gradient(90deg, #941b85 0%, #552280 66.15%, #303aeb 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
+nav li {
+	cursor: pointer;
+}
+
+nav li a {
+	font-family: Roboto Mono, monospace;
+}
+
+nav li:hover a {
+	position: relative;
+}
+
+nav li:hover a::after {
+	content: '';
+	position: absolute;
+	height: 4px;
+	width: calc(100% - 32px);
+	bottom: 8px;
+	left: 16px;
+	background: linear-gradient(
+		90deg,
+		#941b85 0%,
+		#552280 22.22%,
+		#303aeb 33.33%,
+		#941b85 50%,
+		#552280 77.77%,
+		#303aeb 100%
+	);
+
+	background-size: 300% 300%;
+
+	-webkit-animation: FlowGradient 3s ease;
+	-moz-animation: FlowGradient 3s ease;
+	animation: FlowGradient 3s ease;
+
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes FlowGradient {
+	0% {
+		background-position: 0% 50%;
 	}
-	body {
-		color: white;
-		background: black;
+	100% {
+		background-position: 100% 50%;
+	}
+}
+@-moz-keyframes FlowGradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+@keyframes FlowGradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
 	}
 }
