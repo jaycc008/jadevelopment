@@ -5,11 +5,10 @@ import logo from '../public/logo.svg'
 
 const Header = () => {
 	const [activeId, setActiveId] = useState(0)
-	const [clickedLink, setClickedLink] = useState(0)
 
 	return (
 		<>
-			<header className='h-32'>
+			<header className='h-32 fixed top-0 left-20 right-20 bg-onyx'>
 				<nav className='flex flex-row justify-between items-center h-full'>
 					<Link href={'/'} onClick={() => setActiveId(0)}>
 						<Image
@@ -29,7 +28,11 @@ const Header = () => {
 								<Link
 									item={item}
 									href={item.href}
-									className={activeId === item.id ? 'p-4 active' : 'p-4'}
+									className={
+										activeId === item.id
+											? 'p-4 font-mono active'
+											: 'p-4 font-mono'
+									}
 									onClick={() => setActiveId(item.id)}
 								>
 									{item.linktext}
