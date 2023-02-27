@@ -7,6 +7,10 @@ html {
 	color: #fff;
 }
 
+h2 {
+	font-size: 3rem;
+}
+
 .active {
 	position: relative;
 }
@@ -23,10 +27,6 @@ html {
 
 nav li {
 	cursor: pointer;
-}
-
-nav li a {
-	font-family: Roboto Mono, monospace;
 }
 
 nav li:hover a {
