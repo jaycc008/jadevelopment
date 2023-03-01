@@ -1,28 +1,30 @@
+import Link from 'next/link'
 import Image from 'next/image'
+
+import arrowRight from '../public/icons/arrow-right.svg'
+import design from '../public/icons/design.svg'
+import develop from '../public/icons/develop.svg'
+import deploy from '../public/icons/deploy.svg'
+import vue from '../public/icons/vue.svg'
+import nuxt from '../public/icons/nuxt.svg'
+import vuetify from '../public/icons/vuetify.svg'
+import react from '../public/icons/react.svg'
+import nextjs from '../public/icons/nextjs.svg'
+import expressjs from '../public/icons/expressjs.svg'
+import graphql from '../public/icons/graphql.svg'
+import mysql from '../public/icons/mysql.svg'
+import apollo from '../public/icons/apollo.svg'
+import reactSpring from '../public/icons/react-spring.svg'
+
 import profilePic from '../public/jayce.svg'
-import arrowRight from '../public/arrow-right.svg'
-import design from '../public/design.svg'
-import develop from '../public/develop.svg'
-import deploy from '../public/deploy.svg'
 import robStuurman from '../public/rob-stuurman.png'
 import sorryThieves from '../public/sorry-thieves.png'
 import wintersport from '../public/wintersport.png'
-import vue from '../public/vue.svg'
-import nuxt from '../public/nuxt.svg'
-import vuetify from '../public/vuetify.svg'
-import react from '../public/react.svg'
-import nextjs from '../public/nextjs.svg'
-import expressjs from '../public/expressjs.svg'
-import graphql from '../public/graphql.svg'
-import mysql from '../public/mysql.svg'
-import apollo from '../public/apollo.svg'
-import reactSpring from '../public/react-spring.svg'
-import Link from 'next/link'
 
 const Home = () => {
 	return (
 		<div className='container'>
-			<section className='pb-32'>
+			<section className='pb-40'>
 				<h1 className='text-[80px] font-sans font-bold'>Creative Developer</h1>
 				<div className='grid grid-cols-12 gap-5 mt-18'>
 					<h2 className='text-[2.5rem] mt-8 font-sans font-bold col-span-6 col-end-7'>
@@ -36,7 +38,8 @@ const Home = () => {
 					</h2>
 				</div>
 			</section>
-			<section className='pt-8 pb-40'>
+
+			<section className='pb-50'>
 				<h2 className='font-mono'>01. about me</h2>
 				<div className='grid grid-cols-12 gap-5 mt-8'>
 					<Image
@@ -66,7 +69,8 @@ const Home = () => {
 					</article>
 				</div>
 			</section>
-			<section className='pt-8'>
+
+			<section className='pb-50'>
 				<h2 className='font-mono mb-18'>02. my services</h2>
 				<div className='grid grid-cols-12 gap-5'>
 					<div className='col-span-6 col-start-2 '>
@@ -124,7 +128,7 @@ const Home = () => {
 				</div>
 			</section>
 
-			<section className='pt-24'>
+			<section className='pb-50'>
 				<h2 className='font-mono mb-18'>03. my work</h2>
 				<div className='grid grid-cols-12 gap-5'>
 					<div className='col-span-4 col-start-2'>
@@ -231,7 +235,7 @@ const Home = () => {
 				</div>
 			</section>
 
-			<section className='pt-24 w-full'>
+			<section className='w-full'>
 				<h2 className='font-mono'>04. contact</h2>
 
 				<div className='grid grid-cols-12 gap-5 mt-24'>
@@ -246,8 +250,12 @@ const Home = () => {
 						className='text-[96px] font-sans font-bold m-auto copy'
 						onClick={(e) => {
 							const classes = e.target.classList
-							if(!classes.contains('copied')) classes.value += ' copied'
+							if(!classes.contains('copied')) classes.add('copied')
 							navigator.clipboard.writeText('jayce.ardon@gmail.com')
+						}}
+						onMouseEnter={(e) => {
+							const classes = e.target.classList
+							if(classes.contains('copied')) classes.remove('copied')
 						}}
 					>
 						jayce.ardon@gmail.com
