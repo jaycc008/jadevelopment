@@ -6,11 +6,16 @@ import develop from '../public/develop.svg'
 import deploy from '../public/deploy.svg'
 import robStuurman from '../public/rob-stuurman.png'
 import sorryThieves from '../public/sorry-thieves.png'
+import wintersport from '../public/wintersport.png'
 import vue from '../public/vue.svg'
 import nuxt from '../public/nuxt.svg'
 import vuetify from '../public/vuetify.svg'
 import react from '../public/react.svg'
 import nextjs from '../public/nextjs.svg'
+import expressjs from '../public/expressjs.svg'
+import graphql from '../public/graphql.svg'
+import mysql from '../public/mysql.svg'
+import apollo from '../public/apollo.svg'
 import reactSpring from '../public/react-spring.svg'
 import Link from 'next/link'
 
@@ -118,6 +123,7 @@ const Home = () => {
 					</Link>
 				</div>
 			</section>
+
 			<section className='pt-24'>
 				<h2 className='font-mono mb-18'>03. my work</h2>
 				<div className='grid grid-cols-12 gap-5'>
@@ -145,6 +151,7 @@ const Home = () => {
 						alt='Screenshot of robstuurman.nl website'
 						className='col-span-7 col-start-6 w-full'
 					/>
+
 					<Image
 						src={sorryThieves}
 						alt="Screenshot of VanMoof's SorryThieves campaign website"
@@ -161,6 +168,7 @@ const Home = () => {
 							</li>
 							<li className='flex items-center mb-10'>
 								<Image src={nextjs} alt='next.js icon' className='mr-4' />
+								<span className='text-[1.5rem]'>Next.js</span>
 							</li>
 							<li className='flex items-center mb-10'>
 								<Image
@@ -172,12 +180,73 @@ const Home = () => {
 							</li>
 						</ul>
 					</div>
+
+					<div className='col-span-4 col-start-2 mt-50'>
+						<h3 className='font-sans font-bold text-[2.5rem] mt-50 mb-16'>
+							wintersport.nl
+						</h3>
+						<ul>
+							<li className='flex items-center mb-10'>
+								<Image src={vue} alt='vue icon' className='mr-4' />
+								<span className='text-[1.5rem]'>Vue.js</span>
+							</li>
+							<li className='flex items-center mb-10'>
+								<Image src={nuxt} alt='nuxt.js icon' className='mr-4' />
+								<span className='text-[1.5rem]'>NuxtJS</span>
+							</li>
+							<li className='flex items-center mb-10'>
+								<Image src={vuetify} alt='vuetify icon' className='mr-4' />
+								<span className='text-[1.5rem]'>Vuetify</span>
+							</li>
+							<li className='flex items-center mb-10'>
+								<Image src={graphql} alt='graphql icon' className='mr-4' />
+								<span className='text-[1.5rem]'>GraphQL</span>
+							</li>
+							<li className='flex items-center mb-10'>
+								<Image src={apollo} alt='apollo icon' className='mr-4' />
+								<span className='text-[1.5rem]'>Apollo</span>
+							</li>
+							<li className='flex items-center mb-10'>
+								<Image src={expressjs} alt='expressjs icon' className='mr-4' />
+								<span className='text-[1.5rem]'>Express</span>
+							</li>
+							<li className='flex items-center mb-10'>
+								<Image src={mysql} alt='my sequel icon' className='mr-4' />
+								<span className='text-[1.5rem]'>MySQL</span>
+							</li>
+						</ul>
+					</div>
+					<Image
+						src={wintersport}
+						alt='Screenshot of wintersport.nl website'
+						className='col-span-7 col-start-6 w-full  mt-50'
+					/>
+
 					<Link
 						href='/work'
-						className='font-mono font-bold text-2xl col-span-12 col-start-2'
+						className='font-mono font-bold text-2xl col-span-12 col-start-2 mt-8'
 					>
 						view more <Image className='inline' alt='' src={arrowRight} />
 					</Link>
+				</div>
+			</section>
+
+			<section className='pt-24 w-full'>
+				<h2 className='font-mono'>04. contact</h2>
+
+				<div
+					className='flowing-gradient flex mt-32'
+				>
+					<a
+						className='text-[80px] font-sans font-bold m-auto copy'
+						onClick={(e) => {
+							const classes = e.target.classList
+							if(!classes.contains('copied')) classes.value += ' copied'
+							navigator.clipboard.writeText('jayce.ardon@gmail.com')
+						}}
+					>
+						jayce.ardon@gmail.com
+					</a>
 				</div>
 			</section>
 			<section className='spacer h-[500px]'></section>
