@@ -234,11 +234,16 @@ const Home = () => {
 			<section className='pt-24 w-full'>
 				<h2 className='font-mono'>04. contact</h2>
 
+				<div className='grid grid-cols-12 gap-5 mt-24'>
+					<span className='text-2xl col-span-5 col-start-2'>Want to work together?</span>
+					<span className='text-2xl col-span-5 col-start-7 text-right'>Send me a message!</span>
+				</div>
+
 				<div
-					className='flowing-gradient flex mt-32'
+					className='flowing-gradient flex my-40'
 				>
 					<a
-						className='text-[80px] font-sans font-bold m-auto copy'
+						className='text-[96px] font-sans font-bold m-auto copy'
 						onClick={(e) => {
 							const classes = e.target.classList
 							if(!classes.contains('copied')) classes.value += ' copied'
@@ -249,7 +254,6 @@ const Home = () => {
 					</a>
 				</div>
 			</section>
-			<section className='spacer h-[500px]'></section>
 		</div>
 	)
 }
