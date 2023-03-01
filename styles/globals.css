@@ -110,9 +110,9 @@ nav li:hover a::after,
 }
 
 .copy:hover {
-	cursor: url('~/public/copy.svg'), pointer;
+	cursor: url('~/public/icons/copy.svg'), pointer;
 }
 
 .copy.copied:hover {
-	cursor: url('~/public/copied.svg'), pointer;
+	cursor: url('~/public/icons/copied.svg'), pointer;
 }
