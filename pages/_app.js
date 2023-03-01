@@ -6,7 +6,9 @@ const MyApp = ({ Component, pageProps }) => {
 	return (
 		<div className='px-20'>
 			<Header />
-			<Component {...pageProps} />
+			<section className='mt-60 w-full'>
+				<Component {...pageProps} />
+			</section>
 			<Footer />
 		</div>
 	)
