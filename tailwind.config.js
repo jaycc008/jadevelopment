@@ -58,6 +58,9 @@ module.exports = {
 				50: '12.5rem', // 200px
 				100: '25rem', // 200px
 			},
+			backgroundImage: {
+				'hero-background': "url('../public/images/jayce-yuna.jpg')",
+			},
 		},
 	},
 	plugins: [],

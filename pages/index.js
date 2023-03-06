@@ -23,7 +23,7 @@ import wintersport from '../public/wintersport.png'
 
 const Home = () => {
 	return (
-		<div className='container'>
+		<main className='container mt-60'>
 			<section className='pb-40'>
 				<h1 className='text-[80px] font-sans font-bold'>Creative Developer</h1>
 				<div className='grid grid-cols-12 gap-5 mt-18'>
@@ -239,30 +239,32 @@ const Home = () => {
 				<h2 className='font-mono'>04. contact</h2>
 
 				<div className='grid grid-cols-12 gap-5 mt-24'>
-					<span className='text-2xl col-span-5 col-start-2'>Want to work together?</span>
-					<span className='text-2xl col-span-5 col-start-7 text-right'>Send me a message!</span>
+					<span className='text-2xl col-span-5 col-start-2'>
+						Want to work together?
+					</span>
+					<span className='text-2xl col-span-5 col-start-7 text-right'>
+						Send me a message!
+					</span>
 				</div>
 
-				<div
-					className='flowing-gradient flex my-40'
-				>
+				<div className='flowing-gradient flex my-40'>
 					<a
 						className='text-[96px] font-sans font-bold m-auto copy'
-						onClick={(e) => {
+						onClick={e => {
 							const classes = e.target.classList
-							if(!classes.contains('copied')) classes.add('copied')
+							if (!classes.contains('copied')) classes.add('copied')
 							navigator.clipboard.writeText('jayce.ardon@gmail.com')
 						}}
-						onMouseEnter={(e) => {
+						onMouseEnter={e => {
 							const classes = e.target.classList
-							if(classes.contains('copied')) classes.remove('copied')
+							if (classes.contains('copied')) classes.remove('copied')
 						}}
 					>
 						jayce.ardon@gmail.com
 					</a>
 				</div>
 			</section>
-		</div>
+		</main>
 	)
 }
 
