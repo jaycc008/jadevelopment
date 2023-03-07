@@ -26,7 +26,8 @@ const Footer = () => {
 					</ul>
 				</nav>
 				<span className='font-serif my-auto'>
-					Designed and Developed by JA Development
+					Designed and Developed by <span className='text-lightgreen'>JA</span>{' '}
+					development
 				</span>
 			</footer>
 		</>
