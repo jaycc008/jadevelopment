@@ -24,6 +24,7 @@ module.exports = {
 				'Noto Color Emoji',
 			],
 			serif: [
+				'Gloock',
 				'ui-serif',
 				'Georgia',
 				'Cambria',
@@ -45,12 +46,15 @@ module.exports = {
 			],
 		},
 		extend: {
+			fontSize: {
+				cta: ['2rem', '2.5rem'], // 32px,
+			},
 			colors: {
-				'pink-1': '#941B85',
-				'pink-2': '#871C84',
-				'pink-3': '#7B1E83',
-				'blue': '#303AEB',
-				'onyx': '#1a1a1a',
+				onyx: '#1a1a1a',
+				platinum: '#E7E4DF',
+				green: '#3D4E3C',
+				lightgreen: '#798A78',
+				yellow: '#DC9E00',
 			},
 			spacing: {
 				18: '4.5rem', // 72px

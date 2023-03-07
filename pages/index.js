@@ -23,24 +23,27 @@ import wintersport from '../public/wintersport.png'
 
 const Home = () => {
 	return (
-		<main className='container mt-60'>
+		<main className='container mt-60 mx-auto xl:px-10 lg:px-8 md:px-6 px-4'>
 			<section className='pb-40'>
-				<h1 className='text-[80px] font-sans font-bold'>Creative Developer</h1>
+				<h1 className='text-[80px] font-serif font-bold'>Creative Developer</h1>
 				<div className='grid grid-cols-12 gap-5 mt-18'>
-					<h2 className='text-[2.5rem] mt-8 font-sans font-bold col-span-6 col-end-7'>
+					<h2 className='text-[2.5rem] mt-8 font-sans col-span-6 col-end-7'>
 						I design logo&apos;s and websites with{' '}
-						<span className='text-pink-1'>Illustrator</span> and{' '}
-						<span className='text-pink-3'>Figma</span>
+						<span className='text-lightgreen'>Illustrator</span> and{' '}
+						<span className='text-lightgreen'>Figma</span>
 					</h2>
-					<h2 className='text-[2.5rem] mt-8 font-sans font-bold col-span-6 col-end-7'>
+					<h2 className='text-[2.5rem] mt-8 font-sans col-span-6 col-end-7'>
 						I build webapplications and websites with{' '}
-						<span className='text-blue'>&quot;TECH STACK&quot;</span>
+						<span className='text-yellow'>React</span> and{' '}
+						<span className='text-yellow'>Vue</span>
 					</h2>
 				</div>
 			</section>
 
 			<section className='pb-50'>
-				<h2 className='font-mono'>01. about me</h2>
+				<h2 className='font-serif'>
+					<span className='text-lightgreen'>01</span> - About me
+				</h2>
 				<div className='grid grid-cols-12 gap-5 mt-8'>
 					<Image
 						src={profilePic}
@@ -50,7 +53,7 @@ const Home = () => {
 					<article className='col-span-7 col-start-6 mt-[22.5rem]'>
 						<p className='font-sans text-[2rem] mb-8'>
 							Hi, my name is{' '}
-							<span className='text-pink-1 font-bold'>Jayce Ardon</span> and
+							<span className='text-lightgreen font-bold'>Jayce Ardon</span> and
 							I&apos;m a passionate webdeveloper with years of experience in
 							designing, building and testing products. I love working at the
 							crossroads where creativity and technical issues meet. I create
@@ -63,18 +66,21 @@ const Home = () => {
 							multiple projects, I am multidisciplinary and well equipped to
 							deal with anything coming my way.
 						</p>
-						<Link href='/about' className='font-mono font-bold text-2xl'>
-							read more <Image className='inline' alt='' src={arrowRight} />
+						<Link href='/about' className='font-serif text-cta text-yellow'>
+							read more
+							<Image className='inline ml-4' alt='' src={arrowRight} />
 						</Link>
 					</article>
 				</div>
 			</section>
 
 			<section className='pb-50'>
-				<h2 className='font-mono mb-18'>02. my services</h2>
+				<h2 className='font-serif  mb-18'>
+					<span className='text-lightgreen'>02</span> - My services
+				</h2>
 				<div className='grid grid-cols-12 gap-5'>
 					<div className='col-span-6 col-start-2 '>
-						<h3 className='font-sans font-bold text-[2.5rem] mb-8'>Design</h3>
+						<h3 className='font-serif text-[2.5rem] mb-8'>Design</h3>
 						<p className='text-2xl mb-16'>
 							To make sure you get what you want it is important to have a
 							design before diving into programming. As such, I prefer to start
@@ -88,9 +94,7 @@ const Home = () => {
 						className='col-span-1 col-start-10 mt-11'
 					/>
 					<div className='col-span-6 col-start-2 '>
-						<h3 className='font-sans font-bold text-[2.5rem] mb-8'>
-							Development
-						</h3>
+						<h3 className='font-serif text-[2.5rem] mb-8'>Development</h3>
 						<p className='text-2xl mb-16'>
 							Once the design is ready, it&apos;s time to actually build your
 							website and put it live. This is where I use my programming skills
@@ -103,7 +107,7 @@ const Home = () => {
 						className='col-span-1 col-start-10 mt-11'
 					/>
 					<div className='col-span-6 col-start-2 '>
-						<h3 className='font-sans font-bold text-[2.5rem] mb-8'>
+						<h3 className='font-serif text-[2.5rem] mb-8'>
 							Deployment & Hosting
 						</h3>
 						<p className='text-2xl mb-16'>
@@ -121,18 +125,21 @@ const Home = () => {
 					/>
 					<Link
 						href='/services'
-						className='font-mono font-bold text-2xl col-span-12 col-start-2'
+						className='font-serif text-cta text-yellow col-span-12 col-start-2'
 					>
-						read more <Image className='inline' alt='' src={arrowRight} />
+						read more
+						<Image className='inline ml-4' alt='' src={arrowRight} />
 					</Link>
 				</div>
 			</section>
 
 			<section className='pb-50'>
-				<h2 className='font-mono mb-18'>03. my work</h2>
+				<h2 className='font-serif mb-18'>
+					<span className='text-lightgreen'>03</span> - My work
+				</h2>
 				<div className='grid grid-cols-12 gap-5'>
 					<div className='col-span-4 col-start-2'>
-						<h3 className='font-sans font-bold text-[2.5rem] mt-50 mb-16'>
+						<h3 className='font-serif text-[2.5rem] mt-50 mb-16'>
 							robstuurman.nl
 						</h3>
 						<ul>
@@ -162,7 +169,7 @@ const Home = () => {
 						className='col-span-7 col-start-1 w-full mt-50'
 					/>
 					<div className='col-span-5 col-start-9 mt-100'>
-						<h3 className='font-sans font-bold text-[2.5rem] mb-16'>
+						<h3 className='font-serif text-[2.5rem] mb-16'>
 							VanMoof - SorryThieves
 						</h3>
 						<ul>
@@ -179,6 +186,8 @@ const Home = () => {
 									src={reactSpring}
 									alt='react spring icon'
 									className='mr-4'
+									height='45'
+									width='45'
 								/>
 								<span className='text-[1.5rem]'>React Spring</span>
 							</li>
@@ -186,7 +195,7 @@ const Home = () => {
 					</div>
 
 					<div className='col-span-4 col-start-2 mt-50'>
-						<h3 className='font-sans font-bold text-[2.5rem] mt-50 mb-16'>
+						<h3 className='font-serif text-[2.5rem] mt-50 mb-16'>
 							wintersport.nl
 						</h3>
 						<ul>
@@ -228,7 +237,7 @@ const Home = () => {
 
 					<Link
 						href='/work'
-						className='font-mono font-bold text-2xl col-span-12 col-start-2 mt-8'
+						className='font-serif text-cta text-yellow col-span-12 col-start-2 mt-8'
 					>
 						view more <Image className='inline' alt='' src={arrowRight} />
 					</Link>
@@ -236,8 +245,9 @@ const Home = () => {
 			</section>
 
 			<section className='w-full'>
-				<h2 className='font-mono'>04. contact</h2>
-
+				<h2 className='font-serif mb-18'>
+					<span className='text-lightgreen'>04</span> - Contact
+				</h2>
 				<div className='grid grid-cols-12 gap-5 mt-24'>
 					<span className='text-2xl col-span-5 col-start-2'>
 						Want to work together?
@@ -249,7 +259,7 @@ const Home = () => {
 
 				<div className='flowing-gradient flex my-40'>
 					<a
-						className='text-[96px] font-sans font-bold m-auto copy'
+						className='text-[96px] font-serif m-auto copy'
 						onClick={e => {
 							const classes = e.target.classList
 							if (!classes.contains('copied')) classes.add('copied')
