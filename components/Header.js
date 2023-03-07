@@ -8,11 +8,10 @@ const Header = () => {
 
 	return (
 		<div className='flex justify-center'>
-			<header className='h-32 fixed top-0 bg-platinum container xl:px-10 lg:px-8 md:px-6 px-4'>
-				<nav className='flex flex-row justify-between items-center h-full'>
+			<header className='h-32 w-full fixed z-10 top-0 bg-platinum_opacity xl:px-10 lg:px-8 md:px-6 px-4'>
+				<nav className='flex flex-row justify-between items-center h-full container mx-auto'>
 					<Link href={'/'} onClick={() => setActiveId(0)}>
 						<Image
-							className=''
 							src={logo}
 							alt='logo'
 							width={150}

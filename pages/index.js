@@ -23,7 +23,7 @@ import wintersport from '../public/wintersport.png'
 
 const Home = () => {
 	return (
-		<main className='container mt-60 mx-auto xl:px-10 lg:px-8 md:px-6 px-4'>
+		<main className='container mt-60 mx-auto'>
 			<section className='pb-40'>
 				<h1 className='text-[80px] font-serif font-bold'>Creative Developer</h1>
 				<div className='grid grid-cols-12 gap-5 mt-18'>

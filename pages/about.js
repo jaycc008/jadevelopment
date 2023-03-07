@@ -6,8 +6,8 @@ import costaRica from '../public/images/costa-rica.jpg'
 
 const About = () => {
 	return (
-		<main className='mt-32'>
-			<section className='h-[80vh] w-10/12 mx-auto bg-hero-background bg-cover'></section>
+		<main>
+			<section className='h-[80vh] full-width bg-hero-background bg-cover'></section>
 			<section className='pb-40'>
 				<div className='grid grid-cols-12 gap-5'>
 					<div className='col-span-12 lg:col-span-8'>
