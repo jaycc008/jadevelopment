@@ -1,22 +1,22 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../public/logo.svg'
+import logo from '../public/logo_light.svg'
 
 const Header = () => {
 	const [activeId, setActiveId] = useState(0)
 
 	return (
-		<>
-			<header className='h-32 fixed top-0 left-20 right-20 bg-onyx'>
+		<div className='flex justify-center'>
+			<header className='h-32 fixed top-0 bg-platinum container xl:px-10 lg:px-8 md:px-6 px-4'>
 				<nav className='flex flex-row justify-between items-center h-full'>
 					<Link href={'/'} onClick={() => setActiveId(0)}>
 						<Image
 							className=''
 							src={logo}
 							alt='logo'
-							width={96}
-							height={56}
+							width={150}
+							height={92}
 							priority
 							rel='preload'
 							as='image'
@@ -24,14 +24,17 @@ const Header = () => {
 					</Link>
 					<ul className='flex flex-row'>
 						{menuItems.map(item => (
-							<li key={item.id} className='ml-8 last-of-type:-mr-4'>
+							<li
+								key={item.id}
+								className='ml-8 last-of-type:-mr-4 text-[1.125rem]'
+							>
 								<Link
 									item={item}
 									href={item.href}
 									className={
 										activeId === item.id
-											? 'p-4 font-mono active'
-											: 'p-4 font-mono'
+											? 'p-4 font-serif active'
+											: 'p-4 font-serif'
 									}
 									onClick={() => setActiveId(item.id)}
 								>
@@ -42,7 +45,7 @@ const Header = () => {
 					</ul>
 				</nav>
 			</header>
-		</>
+		</div>
 	)
 }
 
