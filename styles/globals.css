@@ -82,3 +82,13 @@ nav li:hover a::after,
 	margin-left: -50vw;
 	margin-right: -50vw;
 }
+
+.menu-tabs span.active {
+	color: theme('colors.green');
+}
+
+.menu-tabs span.active::after {
+	width: 100%;
+	bottom: -0.5rem;
+	left: 0;
+}

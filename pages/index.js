@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { useEffect } from 'react'
 
 import arrowRight from '../public/icons/arrow-right.svg'
 import design from '../public/icons/design.svg'
@@ -22,6 +23,10 @@ import sorryThieves from '../public/sorry-thieves.png'
 import wintersport from '../public/wintersport.png'
 
 const Home = () => {
+	useEffect(() => {
+		document.title = 'JA Development | Home'
+	}, [])
+
 	return (
 		<main className='container mt-60 mx-auto'>
 			<section className='pb-40'>
