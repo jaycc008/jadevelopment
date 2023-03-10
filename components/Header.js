@@ -8,11 +8,10 @@ const Header = () => {
 
 	return (
 		<div className='flex justify-center'>
-			<header className='h-32 fixed top-0 bg-platinum container xl:px-10 lg:px-8 md:px-6 px-4'>
-				<nav className='flex flex-row justify-between items-center h-full'>
+			<header className='h-32 w-full fixed z-10 top-0 bg-platinum_opacity xl:px-10 lg:px-8 md:px-6 px-4'>
+				<nav className='flex flex-row justify-between items-center h-full container mx-auto'>
 					<Link href={'/'} onClick={() => setActiveId(0)}>
 						<Image
-							className=''
 							src={logo}
 							alt='logo'
 							width={150}
@@ -51,9 +50,9 @@ const Header = () => {
 
 const menuItems = [
 	{ id: 0, linktext: 'home', href: '/' },
-	{ id: 1, linktext: 'about me', href: '/about' },
+	{ id: 1, linktext: 'my work', href: '/work' },
 	{ id: 2, linktext: 'services', href: '/services' },
-	{ id: 3, linktext: 'my work', href: '/work' },
+	{ id: 3, linktext: 'about me', href: '/about' },
 	{ id: 4, linktext: 'contact', href: '/contact' },
 ]
 

@@ -9,7 +9,7 @@ const Footer = () => {
 			<footer className='container mx-auto xl:px-10 lg:px-8 md:px-6 px-4 h-32 flex flex-row justify-between'>
 				<nav className='my-auto'>
 					<ul className='flex flex-row'>
-						{menuItems.map(item => (
+						{footerItems.map(item => (
 							<li key={item.id} className='mr-8'>
 								<Link item={item} href={item.href} target='_blank'>
 									<Image
@@ -34,7 +34,7 @@ const Footer = () => {
 	)
 }
 
-const menuItems = [
+const footerItems = [
 	{
 		id: 0,
 		linktext: 'LinkedIn',

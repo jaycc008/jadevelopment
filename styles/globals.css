@@ -11,11 +11,8 @@ h2 {
 	font-size: 3rem;
 }
 
-.active {
-	position: relative;
-}
-
-.active::after {
+.active::after,
+.menu-tabs span:hover::after {
 	content: '';
 	position: absolute;
 	height: 2px;
@@ -29,8 +26,10 @@ nav li {
 	cursor: pointer;
 }
 
+.active,
 nav li:hover a,
-.flowing-gradient:hover a {
+.underline-yellow:hover a,
+.menu-tabs span:hover {
 	position: relative;
 }
 
@@ -48,19 +47,20 @@ nav li:hover a::after {
 	height: 2px;
 }
 
-.flowing-gradient:hover a::after,
+.underline-yellow:hover a::after,
 footer nav li:hover a::after {
 	width: 100%;
 	left: 0;
 }
 
-.flowing-gradient:hover a::after {
+.underline-yellow:hover a::after {
 	height: 8px;
 	bottom: 0;
 }
 
 nav li:hover a::after,
-.flowing-gradient:hover a::after {
+.underline-yellow:hover a::after,
+.menu-tabs span:hover::after {
 	content: '';
 	position: absolute;
 	background: theme('colors.yellow');
@@ -72,4 +72,28 @@ nav li:hover a::after,
 
 .copy.copied:hover {
 	cursor: url('~/public/icons/copied.svg'), pointer;
+}
+
+.full-width {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+.menu-tabs span:hover {
+	position: relative;
+}
+
+.menu-tabs span.active {
+	color: theme('colors.green');
+}
+
+.menu-tabs span.active::after,
+.menu-tabs span:hover::after {
+	width: 100%;
+	bottom: -0.5rem;
+	left: 0;
 }

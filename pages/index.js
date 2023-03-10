@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { useEffect } from 'react'
 
 import arrowRight from '../public/icons/arrow-right.svg'
 import design from '../public/icons/design.svg'
@@ -22,8 +23,12 @@ import sorryThieves from '../public/sorry-thieves.png'
 import wintersport from '../public/wintersport.png'
 
 const Home = () => {
+	useEffect(() => {
+		document.title = 'JA Development | Home'
+	}, [])
+
 	return (
-		<div className='container mx-auto xl:px-10 lg:px-8 md:px-6 px-4'>
+		<main className='container mt-60 mx-auto'>
 			<section className='pb-40'>
 				<h1 className='text-[80px] font-serif font-bold'>Creative Developer</h1>
 				<div className='grid grid-cols-12 gap-5 mt-18'>
@@ -257,7 +262,7 @@ const Home = () => {
 					</span>
 				</div>
 
-				<div className='flowing-gradient flex my-40'>
+				<div className='underline-yellow flex my-40'>
 					<a
 						className='text-[96px] font-serif m-auto copy'
 						onClick={e => {
@@ -274,7 +279,7 @@ const Home = () => {
 					</a>
 				</div>
 			</section>
-		</div>
+		</main>
 	)
 }
 
