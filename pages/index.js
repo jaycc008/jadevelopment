@@ -262,7 +262,7 @@ const Home = () => {
 					</span>
 				</div>
 
-				<div className='flowing-gradient flex my-40'>
+				<div className='underline-yellow flex my-40'>
 					<a
 						className='text-[96px] font-serif m-auto copy'
 						onClick={e => {

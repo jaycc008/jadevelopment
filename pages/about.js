@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect } from 'react'
 
+import Interests from '../components/Interests'
+
 import jack from '../public/images/jack-of-hearts.svg'
 import costaRica from '../public/images/costa-rica.jpg'
 import monkey from '../public/images/monkey.png'
@@ -72,17 +74,7 @@ const About = () => {
 				<h2 className='font-serif mb-10'>
 					<span className='text-lightgreen'>03</span> - Personal interests
 				</h2>
-				<div className='grid grid-cols-12 menu-tabs'>
-					<div className='font-serif text-lightgreen text-[2.5rem] col-span-3 col-start-2'>
-						<span className='active'>Family</span>
-					</div>
-					<div className='font-serif text-lightgreen text-[2.5rem] col-span-3 col-start-5'>
-						<span>Sports</span>
-					</div>
-					<div className='font-serif text-lightgreen text-[2.5rem] col-span-3 col-start-8'>
-						<span>Boardgames</span>
-					</div>
-				</div>
+				<Interests />
 			</section>
 		</main>
 	)
