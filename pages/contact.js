@@ -6,18 +6,12 @@ const Contact = () => {
 	}, [])
 
 	return (
-		<section className='mt-32'>
-			<h2 className='font-serif mb-18'>Contact</h2>
-			<div className='grid grid-cols-12 gap-5 mt-24'>
-				<span className='text-2xl col-span-5 col-start-2'>
-					Want to work together?
-				</span>
-				<span className='text-2xl col-span-5 col-start-7 text-right'>
-					Send me a message!
-				</span>
+		<section className='mt-40'>
+			<div className='flex pt-40 justify-center'>
+				<span className='text-2xl'>Send me a message!</span>
 			</div>
 
-			<div className='underline-yellow flex my-40'>
+			<div className='underline-yellow flex mt-24 mb-50'>
 				<a
 					className='text-[96px] font-serif m-auto copy'
 					onClick={e => {
