@@ -3,104 +3,97 @@
 @tailwind utilities;
 
 html {
-	background-color: #1a1a1a;
-	color: #fff;
+	background-color: theme('colors.platinum');
+	color: theme('colors.green');
 }
 
 h2 {
 	font-size: 3rem;
 }
 
-.active {
-	position: relative;
-}
-
-.active::after {
+.active::after,
+.menu-tabs span:hover::after {
 	content: '';
 	position: absolute;
-	height: 4px;
+	height: 2px;
 	width: calc(100% - 32px);
 	bottom: 8px;
 	left: 16px;
-	background: linear-gradient(90deg, #941b85 0%, #552280 66.15%, #303aeb 100%);
+	background: theme('colors.yellow');
 }
 
 nav li {
 	cursor: pointer;
 }
 
+.active,
 nav li:hover a,
-.flowing-gradient:hover a {
+.underline-yellow:hover a,
+.menu-tabs span:hover {
 	position: relative;
 }
 
-nav li:hover a::after {
-	height: 4px;
+header nav li:hover a::after {
 	width: calc(100% - 32px);
 	left: 16px;
+	bottom: 8px;
 }
 
-.flowing-gradient:hover a::after {
-	height: 8px;
+footer nav li:hover a::after {
+	bottom: -8px;
+}
+
+nav li:hover a::after {
+	height: 2px;
+}
+
+.underline-yellow:hover a::after,
+footer nav li:hover a::after {
 	width: 100%;
 	left: 0;
 }
 
+.underline-yellow:hover a::after {
+	height: 8px;
+	bottom: 0;
+}
+
 nav li:hover a::after,
-.flowing-gradient:hover a::after {
+.underline-yellow:hover a::after,
+.menu-tabs span:hover::after {
 	content: '';
 	position: absolute;
-	bottom: 8px;
-	background: linear-gradient(
-		90deg,
-		#941b85 0%,
-		#552280 22.22%,
-		#303aeb 33.33%,
-		#941b85 50%,
-		#552280 77.77%,
-		#303aeb 100%
-	);
-
-	background-size: 300% 300%;
-
-	-webkit-animation: FlowGradient 3s ease;
-	-moz-animation: FlowGradient 3s ease;
-	animation: FlowGradient 3s ease;
-
-	-webkit-animation-fill-mode: forwards;
-	-moz-animation-fill-mode: forwards;
-	animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes FlowGradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	100% {
-		background-position: 100% 50%;
-	}
-}
-@-moz-keyframes FlowGradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	100% {
-		background-position: 100% 50%;
-	}
-}
-@keyframes FlowGradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	100% {
-		background-position: 100% 50%;
-	}
+	background: theme('colors.yellow');
 }
 
 .copy:hover {
-	cursor: url('~/public/copy.svg'), pointer;
+	cursor: url('~/public/icons/copy.svg'), pointer;
 }
 
 .copy.copied:hover {
-	cursor: url('~/public/copied.svg'), pointer;
+	cursor: url('~/public/icons/copied.svg'), pointer;
+}
+
+.full-width {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+.menu-tabs span:hover {
+	position: relative;
+}
+
+.menu-tabs span.active {
+	color: theme('colors.green');
+}
+
+.menu-tabs span.active::after,
+.menu-tabs span:hover::after {
+	width: 100%;
+	bottom: -0.5rem;
+	left: 0;
 }

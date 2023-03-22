@@ -4,9 +4,9 @@ import Footer from '../components/Footer'
 
 const MyApp = ({ Component, pageProps }) => {
 	return (
-		<div className='px-20'>
+		<div className='w-full relative xl:px-10 lg:px-8 md:px-6 px-4 overflow-x-hidden'>
 			<Header />
-			<section className='mt-60 w-full'>
+			<section className='container mx-auto'>
 				<Component {...pageProps} />
 			</section>
 			<Footer />
