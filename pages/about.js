@@ -15,7 +15,16 @@ const About = () => {
 
 	return (
 		<main>
-			<section className='h-[80vh] full-width bg-about-background bg-cover bg-center lg:bg-right-top mb-20'></section>
+			<section className='h-[80vh] full-width bg-about-background bg-cover bg-center lg:bg-right-top mb-20 flex flex-col justify-end'>
+				<div className='full-width min-h-1/2 keyvisual-gradient flex flex-col justify-end'>
+					<div className='container mx-auto text-white my-12'>
+						<span className='text-[1.125rem]'>About</span>
+						<h1 className='text-[5rem] font-serif w-5/12'>
+							Creative Web Developer
+						</h1>
+					</div>
+				</div>
+			</section>
 			<section className='mb-20'>
 				<div className='grid grid-cols-12 gap-5'>
 					<h2 className='col-span-12 font-serif mb-10'>

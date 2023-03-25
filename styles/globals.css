@@ -97,3 +97,11 @@ nav li:hover a::after,
 	bottom: -0.5rem;
 	left: 0;
 }
+
+.keyvisual-gradient {
+	background: linear-gradient(
+		180deg,
+		rgba(60, 46, 33, 0) 32.66%,
+		rgba(60, 46, 33, 0.4) 60.25%
+	);
+}
