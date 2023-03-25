@@ -69,6 +69,9 @@ module.exports = {
 				'services-background': "url('../public/images/jayce-coffee.png')",
 				'about-background': "url('../public/images/jayce-yuna.png')",
 			},
+			minHeight: {
+				'1/2': '50%',
+			},
 		},
 	},
 	plugins: [],

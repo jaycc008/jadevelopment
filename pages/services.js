@@ -17,11 +17,13 @@ const Services = () => {
 	return (
 		<main>
 			<section className='h-[80vh] full-width bg-services-background bg-cover bg-center lg:bg-right-top mb-20 flex flex-col justify-end'>
-				<div className='container mx-auto text-white'>
-					<span className='text-[1.125rem]'>Services</span>
-					<h1 className='text-[5rem] font-serif w-5/12'>
-						Design, Development, Deployment
-					</h1>
+				<div className='full-width min-h-1/2 keyvisual-gradient flex flex-col justify-end'>
+					<div className='container mx-auto text-white my-12'>
+						<span className='text-[1.125rem]'>Services</span>
+						<h1 className='text-[5rem] font-serif w-5/12'>
+							Design, Development, Deployment
+						</h1>
+					</div>
 				</div>
 			</section>
 			<section className='mb-20'>
