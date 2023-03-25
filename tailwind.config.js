@@ -66,7 +66,8 @@ module.exports = {
 				100: '25rem', // 200px
 			},
 			backgroundImage: {
-				'hero-background': "url('../public/images/jayce-yuna.png')",
+				'services-background': "url('../public/images/jayce-coffee.png')",
+				'about-background': "url('../public/images/jayce-yuna.png')",
 			},
 		},
 	},
