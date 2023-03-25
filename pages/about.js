@@ -15,7 +15,7 @@ const About = () => {
 
 	return (
 		<main>
-			<section className='h-[80vh] full-width bg-hero-background bg-cover bg-center lg:bg-right-top mb-20'></section>
+			<section className='h-[80vh] full-width bg-about-background bg-cover bg-center lg:bg-right-top mb-20'></section>
 			<section className='mb-20'>
 				<div className='grid grid-cols-12 gap-5'>
 					<h2 className='col-span-12 font-serif mb-10'>
