@@ -63,11 +63,7 @@ module.exports = {
 				30: '7.5rem', // 120px
 				48: '12rem', // 192px
 				50: '12.5rem', // 200px
-				100: '25rem', // 200px
-			},
-			backgroundImage: {
-				'services-background': "url('../public/images/jayce-coffee.png')",
-				'about-background': "url('../public/images/jayce-yuna.png')",
+				100: '25rem', // 400px
 			},
 			minHeight: {
 				'1/2': '50%',

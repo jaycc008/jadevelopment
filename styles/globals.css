@@ -105,3 +105,11 @@ nav li:hover a::after,
 		rgba(60, 46, 33, 0.4) 60.25%
 	);
 }
+
+.bg-services-background {
+	background-image: url('../public/images/jayce-coffee.png');
+}
+
+.bg-about-background {
+	background-image: url('../public/images/jayce-yuna.png');
+}
