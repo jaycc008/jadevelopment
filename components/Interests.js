@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import Image from 'next/image'
+import { Cols } from './Cols'
 
 const Interests = () => {
 	const [activeId, setActiveId] = useState(0)
 
 	return (
 		<>
-			<div className='grid grid-cols-12 gap-5 menu-tabs mb-20'>
+			<Cols className='menu-tabs mb-20 col-span-12'>
 				{interestItems.map(item => (
 					<div
 						key={item.id}
@@ -27,8 +28,8 @@ const Interests = () => {
 						</span>
 					</div>
 				))}
-			</div>
-			<div className='grid grid-cols-12 gap-5'>
+			</Cols>
+			<Cols className='col-span-12'>
 				<Image
 					src={interestItems[activeId].img}
 					alt={interestItems[activeId].alt}
@@ -37,7 +38,7 @@ const Interests = () => {
 				<article className='col-span-5 col-start-7 my-auto'>
 					<p className='text-[2rem]'>{interestItems[activeId].text}</p>
 				</article>
-			</div>
+			</Cols>
 		</>
 	)
 }
