@@ -47,7 +47,12 @@ module.exports = {
 		},
 		extend: {
 			fontSize: {
-				cta: ['2rem', '2.5rem'], // 32px,
+				'xs': '1.125rem', // 18px
+				'sm': '1.5rem', // 24px
+				'md': '2rem', // 32px
+				'lg': '2.5rem', // 40px
+				'xl': '5rem', // 80px
+				'2xl': '6rem', // 96px
 			},
 			colors: {
 				onyx: '#1a1a1a',

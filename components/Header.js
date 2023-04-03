@@ -23,10 +23,7 @@ const Header = () => {
 					</Link>
 					<ul className='flex flex-row'>
 						{menuItems.map(item => (
-							<li
-								key={item.id}
-								className='ml-8 last-of-type:-mr-4 text-[1.125rem]'
-							>
+							<li key={item.id} className='ml-8 last-of-type:-mr-4 text-xs'>
 								<Link
 									item={item}
 									href={item.href}
