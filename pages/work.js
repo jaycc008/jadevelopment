@@ -18,7 +18,12 @@ const Work = () => {
 	return (
 		<main>
 			<KeyVisual pageName='My work' pageHeader='Projects & Experience' />
-			<PageSection index='01' header='Experience'></PageSection>
+			<PageSection index='01' header='Experience'>
+				<div className='col-span-4'>
+					<h3 className='font-serif text-[2.5rem] mb-10'></h3>
+					<p className='text-[1.5rem]'></p>
+				</div>
+			</PageSection>
 			<PageSection index='02' header='Cases' gapY={10}>
 				<div className='col-span-4'>
 					<h3 className='font-serif text-[2.5rem] mb-10'>robstuurman.nl</h3>
