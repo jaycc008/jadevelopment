@@ -34,7 +34,7 @@ const Services = () => {
 					</p>
 					<Link
 						href='/contact'
-						className='font-serif text-cta text-yellow mb-20'
+						className='font-serif text-md text-yellow mb-20'
 					>
 						contact me
 						<Image className='inline ml-4' alt='' src={arrowRight} />
