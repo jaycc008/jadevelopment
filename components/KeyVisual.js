@@ -3,7 +3,7 @@ const KeyVisual = ({ pageName, pageHeader }) => {
 		<section
 			className={
 				'h-[80vh] full-width bg-' +
-				pageName.toLowerCase() +
+				pageName.toLowerCase().replace(/\s+/g, '') +
 				'-background bg-cover bg-center lg:bg-right-top mb-20 flex flex-col justify-end'
 			}
 		>

@@ -110,6 +110,7 @@ nav li:hover a::after,
 	background-image: url('../public/images/jayce-coffee.png');
 }
 
-.bg-about-background {
+.bg-about-background,
+.bg-mywork-background {
 	background-image: url('../public/images/jayce-yuna.png');
 }

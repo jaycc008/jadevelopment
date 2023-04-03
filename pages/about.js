@@ -41,7 +41,7 @@ const About = () => {
 					</p>
 					<Link
 						href='/work'
-						className='font-serif text-cta text-yellow col-span-8'
+						className='font-serif text-md text-yellow col-span-8'
 					>
 						YES, I can make your project a success!
 					</Link>

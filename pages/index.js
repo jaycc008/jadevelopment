@@ -71,7 +71,7 @@ const Home = () => {
 						projects, I am multidisciplinary and well equipped to deal with
 						anything coming my way.
 					</p>
-					<Link href='/about' className='font-serif text-cta text-yellow'>
+					<Link href='/about' className='font-serif text-md text-yellow'>
 						read more
 						<Image className='inline ml-4' alt='' src={arrowRight} />
 					</Link>
@@ -81,7 +81,7 @@ const Home = () => {
 			<PageSection index='02' header='My services'>
 				<div className='col-span-6 col-start-2 '>
 					<h3 className='font-serif text-lg mb-8'>Design</h3>
-					<p className='text-2xl mb-16'>
+					<p className='text-sm mb-16'>
 						To make sure you get what you want it is important to have a design
 						before diving into programming. As such, import I prefer to start
 						from scratch by designing and making sure the designs are to your
@@ -95,7 +95,7 @@ const Home = () => {
 				/>
 				<div className='col-span-6 col-start-2 '>
 					<h3 className='font-serif text-lg mb-8'>Development</h3>
-					<p className='text-2xl mb-16'>
+					<p className='text-sm mb-16'>
 						Once the design is ready, it&apos;s time to actually build your
 						website and put it live. This is where I use my programming skills
 						as well as my testing skills to create a high quality product.
@@ -108,7 +108,7 @@ const Home = () => {
 				/>
 				<div className='col-span-6 col-start-2 '>
 					<h3 className='font-serif text-lg mb-8'>Deployment & Hosting</h3>
-					<p className='text-2xl mb-16'>
+					<p className='text-sm mb-16'>
 						Your product is ready, now all that is left to do is make sure it is
 						deployed online. This step is needed so you actually get to see your
 						website when you go to your domain. I prefer to work from start to
@@ -122,7 +122,7 @@ const Home = () => {
 				/>
 				<Link
 					href='/services'
-					className='font-serif text-cta text-yellow col-span-12 col-start-2'
+					className='font-serif text-md text-yellow col-span-12 col-start-2'
 				>
 					read more
 					<Image className='inline ml-4' alt='' src={arrowRight} />
@@ -223,7 +223,7 @@ const Home = () => {
 
 				<Link
 					href='/work'
-					className='font-serif text-cta text-yellow col-span-12 col-start-2 mt-8'
+					className='font-serif text-md text-yellow col-span-12 col-start-2 mt-8'
 				>
 					view more <Image className='inline' alt='' src={arrowRight} />
 				</Link>

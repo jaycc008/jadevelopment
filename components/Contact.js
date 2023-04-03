@@ -7,10 +7,10 @@ const Contact = ({ index }) => {
 				<span className='text-lightgreen'>{index}</span> - Contact
 			</h2>
 			<Cols>
-				<span className='text-2xl col-span-5 col-start-2'>
+				<span className='text-sm col-span-5 col-start-2'>
 					Want to work together?
 				</span>
-				<span className='text-2xl col-span-5 col-start-7 text-right'>
+				<span className='text-sm col-span-5 col-start-7 text-right'>
 					Send me a message!
 				</span>
 				<div className='underline-yellow flex my-40 col-span-12'>
