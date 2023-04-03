@@ -12,7 +12,7 @@ const Interests = () => {
 					<div
 						key={item.id}
 						className={
-							'font-serif text-lightgreen text-[2.5rem] col-span-3 col-start-' +
+							'font-serif text-lightgreen text-lg col-span-3 col-start-' +
 							(2 + item.id * 3)
 						}
 					>
@@ -36,7 +36,7 @@ const Interests = () => {
 					className='w-full col-span-4 col-start-2'
 				/>
 				<article className='col-span-5 col-start-7 my-auto'>
-					<p className='text-[2rem]'>{interestItems[activeId].text}</p>
+					<p className='text-md'>{interestItems[activeId].text}</p>
 				</article>
 			</Cols>
 		</>

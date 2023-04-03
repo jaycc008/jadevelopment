@@ -9,8 +9,8 @@ const KeyVisual = ({ pageName, pageHeader }) => {
 		>
 			<div className='full-width min-h-1/2 keyvisual-gradient flex flex-col justify-end'>
 				<div className='container mx-auto text-white my-12'>
-					<span className='text-[1.125rem]'>{pageName}</span>
-					<h1 className='text-[5rem] font-serif w-5/12'>{pageHeader}</h1>
+					<span className='text-xs'>{pageName}</span>
+					<h1 className='text-xl font-serif w-5/12'>{pageHeader}</h1>
 				</div>
 			</div>
 		</section>
