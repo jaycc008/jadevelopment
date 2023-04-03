@@ -13,7 +13,7 @@ const Contact = () => {
 
 			<div className='underline-yellow flex mt-24 mb-50'>
 				<a
-					className='text-[96px] font-serif m-auto copy'
+					className='text-2xl font-serif m-auto copy'
 					onClick={e => {
 						const classes = e.target.classList
 						if (!classes.contains('copied')) classes.add('copied')

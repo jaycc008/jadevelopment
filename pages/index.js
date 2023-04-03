@@ -34,14 +34,14 @@ const Home = () => {
 	return (
 		<main className='container mt-60 mx-auto'>
 			<section className='pb-40'>
-				<h1 className='text-[80px] font-serif font-bold'>Creative Developer</h1>
+				<h1 className='text-xl font-serif font-bold'>Creative Developer</h1>
 				<Cols className='mt-18'>
-					<h2 className='text-[2.5rem] mt-8 font-sans col-span-6 col-end-7'>
+					<h2 className='text-lg mt-8 font-sans col-span-6 col-end-7'>
 						I design logo&apos;s and websites with{' '}
 						<span className='text-lightgreen'>Illustrator</span> and{' '}
 						<span className='text-lightgreen'>Figma</span>
 					</h2>
-					<h2 className='text-[2.5rem] mt-8 font-sans col-span-6 col-end-7'>
+					<h2 className='text-lg mt-8 font-sans col-span-6 col-end-7'>
 						I build webapplications and websites with{' '}
 						<span className='text-yellow'>React</span> and{' '}
 						<span className='text-yellow'>Vue</span>
@@ -56,7 +56,7 @@ const Home = () => {
 					className='col-span-4 w-full'
 				/>
 				<article className='col-span-7 col-start-6 mt-[22.5rem]'>
-					<p className='font-sans text-[2rem] mb-8'>
+					<p className='font-sans text-md mb-8'>
 						Hi, my name is{' '}
 						<span className='text-lightgreen font-bold'>Jayce Ardon</span> and
 						I&apos;m a passionate webdeveloper with years of experience in
@@ -64,7 +64,7 @@ const Home = () => {
 						crossroads where creativity and technical issues meet. I create
 						memorable web experiences.
 					</p>
-					<p className='font-sans text-[2rem] mb-12'>
+					<p className='font-sans text-md mb-12'>
 						With a background in testing, I constantly assure I deliver high
 						quality. Branching out into highly technical topics such as networks
 						and security as well as honing my creativity through multiple
@@ -80,7 +80,7 @@ const Home = () => {
 
 			<PageSection index='02' header='My services'>
 				<div className='col-span-6 col-start-2 '>
-					<h3 className='font-serif text-[2.5rem] mb-8'>Design</h3>
+					<h3 className='font-serif text-lg mb-8'>Design</h3>
 					<p className='text-2xl mb-16'>
 						To make sure you get what you want it is important to have a design
 						before diving into programming. As such, import I prefer to start
@@ -94,7 +94,7 @@ const Home = () => {
 					className='col-span-1 col-start-10 mt-11'
 				/>
 				<div className='col-span-6 col-start-2 '>
-					<h3 className='font-serif text-[2.5rem] mb-8'>Development</h3>
+					<h3 className='font-serif text-lg mb-8'>Development</h3>
 					<p className='text-2xl mb-16'>
 						Once the design is ready, it&apos;s time to actually build your
 						website and put it live. This is where I use my programming skills
@@ -107,9 +107,7 @@ const Home = () => {
 					className='col-span-1 col-start-10 mt-11'
 				/>
 				<div className='col-span-6 col-start-2 '>
-					<h3 className='font-serif text-[2.5rem] mb-8'>
-						Deployment & Hosting
-					</h3>
+					<h3 className='font-serif text-lg mb-8'>Deployment & Hosting</h3>
 					<p className='text-2xl mb-16'>
 						Your product is ready, now all that is left to do is make sure it is
 						deployed online. This step is needed so you actually get to see your
@@ -133,21 +131,19 @@ const Home = () => {
 
 			<PageSection index='03' header='My work'>
 				<div className='col-span-4 col-start-2'>
-					<h3 className='font-serif text-[2.5rem] mt-50 mb-16'>
-						robstuurman.nl
-					</h3>
+					<h3 className='font-serif text-lg mt-50 mb-16'>robstuurman.nl</h3>
 					<ul>
 						<li className='flex items-center mb-10'>
 							<Image src={vue} alt='vue icon' className='mr-4' />
-							<span className='text-[1.5rem]'>Vue.js</span>
+							<span className='text-sm'>Vue.js</span>
 						</li>
 						<li className='flex items-center mb-10'>
 							<Image src={nuxt} alt='nuxt.js icon' className='mr-4' />
-							<span className='text-[1.5rem]'>NuxtJS</span>
+							<span className='text-sm'>NuxtJS</span>
 						</li>
 						<li className='flex items-center mb-10'>
 							<Image src={vuetify} alt='vuetify icon' className='mr-4' />
-							<span className='text-[1.5rem]'>Vuetify</span>
+							<span className='text-sm'>Vuetify</span>
 						</li>
 					</ul>
 				</div>
@@ -163,17 +159,15 @@ const Home = () => {
 					className='col-span-7 col-start-1 w-full mt-50'
 				/>
 				<div className='col-span-5 col-start-9 mt-100'>
-					<h3 className='font-serif text-[2.5rem] mb-16'>
-						VanMoof - SorryThieves
-					</h3>
+					<h3 className='font-serif text-lg mb-16'>VanMoof - SorryThieves</h3>
 					<ul>
 						<li className='flex items-center mb-10'>
 							<Image src={react} alt='react icon' className='mr-4' />
-							<span className='text-[1.5rem]'>React.js</span>
+							<span className='text-sm'>React.js</span>
 						</li>
 						<li className='flex items-center mb-10'>
 							<Image src={nextjs} alt='next.js icon' className='mr-4' />
-							<span className='text-[1.5rem]'>Next.js</span>
+							<span className='text-sm'>Next.js</span>
 						</li>
 						<li className='flex items-center mb-10'>
 							<Image
@@ -183,43 +177,41 @@ const Home = () => {
 								height='45'
 								width='45'
 							/>
-							<span className='text-[1.5rem]'>React Spring</span>
+							<span className='text-sm'>React Spring</span>
 						</li>
 					</ul>
 				</div>
 
 				<div className='col-span-4 col-start-2 mt-50'>
-					<h3 className='font-serif text-[2.5rem] mt-50 mb-16'>
-						wintersport.nl
-					</h3>
+					<h3 className='font-serif text-lg mt-50 mb-16'>wintersport.nl</h3>
 					<ul>
 						<li className='flex items-center mb-10'>
 							<Image src={vue} alt='vue icon' className='mr-4' />
-							<span className='text-[1.5rem]'>Vue.js</span>
+							<span className='text-sm'>Vue.js</span>
 						</li>
 						<li className='flex items-center mb-10'>
 							<Image src={nuxt} alt='nuxt.js icon' className='mr-4' />
-							<span className='text-[1.5rem]'>NuxtJS</span>
+							<span className='text-sm'>NuxtJS</span>
 						</li>
 						<li className='flex items-center mb-10'>
 							<Image src={vuetify} alt='vuetify icon' className='mr-4' />
-							<span className='text-[1.5rem]'>Vuetify</span>
+							<span className='text-sm'>Vuetify</span>
 						</li>
 						<li className='flex items-center mb-10'>
 							<Image src={graphql} alt='graphql icon' className='mr-4' />
-							<span className='text-[1.5rem]'>GraphQL</span>
+							<span className='text-sm'>GraphQL</span>
 						</li>
 						<li className='flex items-center mb-10'>
 							<Image src={apollo} alt='apollo icon' className='mr-4' />
-							<span className='text-[1.5rem]'>Apollo</span>
+							<span className='text-sm'>Apollo</span>
 						</li>
 						<li className='flex items-center mb-10'>
 							<Image src={expressjs} alt='expressjs icon' className='mr-4' />
-							<span className='text-[1.5rem]'>Express</span>
+							<span className='text-sm'>Express</span>
 						</li>
 						<li className='flex items-center mb-10'>
 							<Image src={mysql} alt='my sequel icon' className='mr-4' />
-							<span className='text-[1.5rem]'>MySQL</span>
+							<span className='text-sm'>MySQL</span>
 						</li>
 					</ul>
 				</div>
