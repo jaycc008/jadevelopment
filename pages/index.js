@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect } from 'react'
 
-import arrowRight from '../public/icons/arrow-right.svg'
 import design from '../public/icons/design.svg'
 import develop from '../public/icons/develop.svg'
 import deploy from '../public/icons/deploy.svg'
@@ -25,6 +24,7 @@ import wintersport from '../public/wintersport.png'
 import PageSection from '../components/PageSection'
 import Contact from '../components/Contact'
 import { Cols } from '../components/Cols'
+import { Cta } from '../components/Cta'
 
 const Home = () => {
 	useEffect(() => {
@@ -71,10 +71,7 @@ const Home = () => {
 						projects, I am multidisciplinary and well equipped to deal with
 						anything coming my way.
 					</p>
-					<Link href='/about' className='font-serif text-md text-yellow'>
-						read more
-						<Image className='inline ml-4' alt='' src={arrowRight} />
-					</Link>
+					<Cta href='/about' />
 				</article>
 			</PageSection>
 
@@ -120,18 +117,17 @@ const Home = () => {
 					alt='deploy icon'
 					className='col-span-1 col-start-10 mt-11'
 				/>
-				<Link
-					href='/services'
-					className='font-serif text-md text-yellow col-span-12 col-start-2'
-				>
-					read more
-					<Image className='inline ml-4' alt='' src={arrowRight} />
-				</Link>
+
+				<Cta href='/services' className='col-span-12 col-start-2' />
 			</PageSection>
 
 			<PageSection index='03' header='My work'>
 				<div className='col-span-4 col-start-2'>
-					<h3 className='font-serif text-lg mt-50 mb-16'>robstuurman.nl</h3>
+					<Link href='https://robstuurman.nl/' target='_blank'>
+						<h3 className='font-serif text-lg mt-50 mb-16 text-yellow'>
+							robstuurman.nl
+						</h3>
+					</Link>
 					<ul>
 						<li className='flex items-center mb-10'>
 							<Image src={vue} alt='vue icon' className='mr-4' />
@@ -159,7 +155,14 @@ const Home = () => {
 					className='col-span-7 col-start-1 w-full mt-50'
 				/>
 				<div className='col-span-5 col-start-9 mt-100'>
-					<h3 className='font-serif text-lg mb-16'>VanMoof - SorryThieves</h3>
+					<Link
+						href='https://www.vanmoof.com/shop/sorrythieves/'
+						target='_blank'
+					>
+						<h3 className='font-serif text-lg mb-16 text-yellow'>
+							VanMoof - SorryThieves
+						</h3>
+					</Link>
 					<ul>
 						<li className='flex items-center mb-10'>
 							<Image src={react} alt='react icon' className='mr-4' />
@@ -183,7 +186,11 @@ const Home = () => {
 				</div>
 
 				<div className='col-span-4 col-start-2 mt-50'>
-					<h3 className='font-serif text-lg mt-50 mb-16'>wintersport.nl</h3>
+					<Link href='https://wintersport.nl/' target='_blank'>
+						<h3 className='font-serif text-lg mt-50 mb-16 text-yellow'>
+							wintersport.nl
+						</h3>
+					</Link>
 					<ul>
 						<li className='flex items-center mb-10'>
 							<Image src={vue} alt='vue icon' className='mr-4' />
@@ -221,12 +228,11 @@ const Home = () => {
 					className='col-span-7 col-start-6 w-full  mt-50'
 				/>
 
-				<Link
+				<Cta
 					href='/work'
-					className='font-serif text-md text-yellow col-span-12 col-start-2 mt-8'
-				>
-					view more <Image className='inline' alt='' src={arrowRight} />
-				</Link>
+					className='col-span-12 col-start-2 mt-8'
+					linkText='view more'
+				/>
 			</PageSection>
 			<Contact index='04' />
 		</main>

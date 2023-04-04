@@ -1,11 +1,9 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import { useEffect } from 'react'
 
-import arrowRight from '../public/icons/arrow-right.svg'
 import KeyVisual from '../components/KeyVisual'
 import Contact from '../components/Contact'
 import PageSection from '../components/PageSection'
+import { Cta } from '../components/Cta'
 
 const Services = () => {
 	useEffect(() => {
@@ -32,13 +30,7 @@ const Services = () => {
 						With my diverse work experience, it was only logical to build my own
 						brand and so JA (which is Dutch for YES) was born.
 					</p>
-					<Link
-						href='/contact'
-						className='font-serif text-md text-yellow mb-20'
-					>
-						contact me
-						<Image className='inline ml-4' alt='' src={arrowRight} />
-					</Link>
+					<Cta href='/contact' className='mb-20' linkText='contact me' />
 				</div>
 			</PageSection>
 			<PageSection index='02' header='Design'>
