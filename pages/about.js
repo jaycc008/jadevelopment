@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { useEffect } from 'react'
 
 import Interests from '../components/Interests'
@@ -9,6 +8,7 @@ import monkey from '../public/images/monkey.png'
 import KeyVisual from '../components/KeyVisual'
 import { Cols } from '../components/Cols'
 import PageSection from '../components/PageSection'
+import { Cta } from '../components/Cta'
 
 const About = () => {
 	useEffect(() => {
@@ -39,12 +39,11 @@ const About = () => {
 						With my diverse work experience, it was only logical to build my own
 						brand and so JA (which is Dutch for YES) was born.
 					</p>
-					<Link
+					<Cta
 						href='/work'
-						className='font-serif text-md text-yellow col-span-8'
-					>
-						YES, I can make your project a success!
-					</Link>
+						className='col-span-8'
+						linkText='YES, I can make your project a success!'
+					/>
 				</div>
 			</PageSection>
 			<PageSection index='02' header='Costa Rica based'>

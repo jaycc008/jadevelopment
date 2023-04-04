@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { useEffect } from 'react'
 
 import robStuurman from '../public/rob-stuurman.png'
@@ -81,13 +80,10 @@ const Work = () => {
 					alt='test icon'
 					className='col-span-1 col-start-10 mt-11'
 				/>
-				<Link
-					href='/services'
-					className='font-serif text-md text-yellow col-span-12 col-start-2'
-				>
+				<a className='font-serif text-md text-yellow col-span-12 col-start-2'>
 					download cv
 					<Image className='inline ml-4' alt='' src={arrowDown} />
-				</Link>
+				</a>
 			</PageSection>
 			<PageSection index='02' header='Cases' gapY={10}>
 				<div className='col-span-4'>
