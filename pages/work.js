@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import robStuurman from '../public/rob-stuurman.png'
 import sorryThieves from '../public/sorry-thieves.png'
@@ -13,16 +13,21 @@ import arrowDown from '../public/icons/arrow-down.svg'
 import KeyVisual from '../components/KeyVisual'
 import Contact from '../components/Contact'
 import PageSection from '../components/PageSection'
+import Modal from '../components/Modal'
+import { Cols } from '../components/Cols'
 
 const Work = () => {
 	useEffect(() => {
 		document.title = 'JA Development | Work'
 	}, [])
 
+	const [show, setShow] = useState(false)
+
 	return (
 		<main>
 			<KeyVisual pageName='My work' pageHeader='Projects & Experience' />
 			<PageSection index='01' header='Experience'>
+				<button onClick={() => setShow(true)}>showModal</button>
 				<div className='col-span-6 col-start-2 '>
 					<h3 className='font-serif text-lg mb-8'>Development</h3>
 					<p className='text-sm mb-16'>
@@ -119,6 +124,11 @@ const Work = () => {
 				/>
 			</PageSection>
 			<Contact index='03' />
+			<Modal
+				show={show}
+				onClose={() => setShow(false)}
+				caseHeader='robstuurman.nl'
+			></Modal>
 		</main>
 	)
 }
