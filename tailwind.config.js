@@ -51,6 +51,7 @@ module.exports = {
 				'sm': '1.5rem', // 24px
 				'md': '2rem', // 32px
 				'lg': '2.5rem', // 40px
+				'title': '3rem', // 48px
 				'xl': '5rem', // 80px
 				'2xl': '6rem', // 96px
 			},
