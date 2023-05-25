@@ -30,11 +30,11 @@ const CaseModal = ({ show, onClose, caseHeader, children }) => {
 			in={show}
 			classNames='modal'
 			unmountOnExit
-			timeout={{ enter: 300, exit: 300 }}
+			timeout={{ enter: 500, exit: 500 }}
 		>
 			<div ref={nodeRef} className='modal w-full fixed top-0 left-0 z-10'>
 				<div className='inner-modal w-full bg-platinum xl:px-10 lg:px-8 md:px-6 px-4'>
-					<button onClick={onClose} className='fixed right-5 top-10'>
+					<button onClick={onClose} className='fixed right-10 top-10'>
 						<Image src={close} alt='' width='24' />
 					</button>
 					<div className='container mx-auto mt-10'>

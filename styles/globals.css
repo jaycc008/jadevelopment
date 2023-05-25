@@ -66,6 +66,10 @@ nav li:hover a::after,
 	background: theme('colors.yellow');
 }
 
+.view:hover {
+	cursor: url('~/public/icons/view.svg'), pointer;
+}
+
 .copy:hover {
 	cursor: url('~/public/icons/copy.svg'), pointer;
 }
@@ -138,7 +142,7 @@ nav li:hover a::after,
 	opacity: 1;
 	pointer-events: visible;
 	transform: translateY(0);
-	transition: all 700ms;
+	transition: all 500ms;
 }
 
 .modal-exit {
@@ -151,5 +155,5 @@ nav li:hover a::after,
 	opacity: 0;
 	pointer-events: none;
 	transform: translateY(-400px);
-	transition: all 700ms;
+	transition: all 500ms;
 }

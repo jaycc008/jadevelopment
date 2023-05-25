@@ -105,7 +105,7 @@ const Work = () => {
 								width={1000}
 								height={1000}
 								alt={item.alt1}
-								className='col-span-7 col-start-6 w-full'
+								className='col-span-7 col-start-6 w-full view'
 								onClick={() => {
 									setShow(true)
 									setActiveCase(index)
@@ -119,7 +119,7 @@ const Work = () => {
 								width={1000}
 								height={1000}
 								alt={item.alt1}
-								className='col-span-7 w-full'
+								className='col-span-7 w-full copy'
 								onClick={() => {
 									setShow(true)
 									setActiveCase(index)
