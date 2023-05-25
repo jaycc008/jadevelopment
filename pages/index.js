@@ -17,9 +17,9 @@ import apollo from '../public/icons/apollo.svg'
 import reactSpring from '../public/icons/react-spring.svg'
 
 import profilePic from '../public/jayce.svg'
-import robStuurman from '../public/rob-stuurman.png'
-import sorryThieves from '../public/sorry-thieves.png'
-import wintersport from '../public/wintersport.png'
+import rob from '../public/images/rob.png'
+import sorryThieves from '../public/images/sorry-thieves.png'
+import wintersport from '../public/images/wintersport.png'
 
 import PageSection from '../components/PageSection'
 import Contact from '../components/Contact'
@@ -144,7 +144,7 @@ const Home = () => {
 					</ul>
 				</div>
 				<Image
-					src={robStuurman}
+					src={rob}
 					alt='Screenshot of robstuurman.nl website'
 					className='col-span-7 col-start-6 w-full'
 				/>

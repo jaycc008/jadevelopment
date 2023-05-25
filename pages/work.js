@@ -1,9 +1,8 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-import robStuurman from '../public/rob-stuurman.png'
-import sorryThieves from '../public/sorry-thieves.png'
-import wintersport from '../public/wintersport.png'
+import sorryThieves from '../public/images/sorry-thieves.png'
+import wintersport from '../public/images/wintersport.png'
 import design from '../public/icons/design.svg'
 import develop from '../public/icons/develop.svg'
 import deploy from '../public/icons/deploy.svg'
@@ -13,21 +12,24 @@ import arrowDown from '../public/icons/arrow-down.svg'
 import KeyVisual from '../components/KeyVisual'
 import Contact from '../components/Contact'
 import PageSection from '../components/PageSection'
-import Modal from '../components/Modal'
-import { Cols } from '../components/Cols'
+import CaseModal from '../components/CaseModal'
+import Case from '../components/Case'
+import Cases from '../data/Cases.json'
 
 const Work = () => {
+	const [show, setShow] = useState(false)
+	const [activeCase, setActiveCase] = useState(0)
+
+	console.log(activeCase)
+
 	useEffect(() => {
 		document.title = 'JA Development | Work'
 	}, [])
-
-	const [show, setShow] = useState(false)
 
 	return (
 		<main>
 			<KeyVisual pageName='My work' pageHeader='Projects & Experience' />
 			<PageSection index='01' header='Experience'>
-				<button onClick={() => setShow(true)}>showModal</button>
 				<div className='col-span-6 col-start-2 '>
 					<h3 className='font-serif text-lg mb-8'>Development</h3>
 					<p className='text-sm mb-16'>
@@ -90,45 +92,57 @@ const Work = () => {
 					<Image className='inline ml-4' alt='' src={arrowDown} />
 				</a>
 			</PageSection>
-			<PageSection index='02' header='Cases' gapY={10}>
-				<div className='col-span-4'>
-					<h3 className='font-serif text-lg mb-10'>robstuurman.nl</h3>
-					<p className='text-sm'>
-						Beautiful onepage website for a spiritual healer.
-					</p>
-				</div>
-				<Image
-					src={robStuurman}
-					alt='Screenshot of robstuurman.nl'
-					className='col-span-7 col-start-6 w-full'
-				/>
-				<div className='col-span-4'>
-					<h3 className='font-serif text-lg mb-10'>SorryThieves</h3>
-					<p className='text-sm'>Campaign page for E-Bike store VanMoof.</p>
-				</div>
-				<Image
-					src={sorryThieves}
-					alt='Screenshot of SorryThieves campaign page'
-					className='col-span-7 col-start-6 w-full'
-				/>
-				<div className='col-span-4'>
-					<h3 className='font-serif text-lg mb-10'>wintersport.nl</h3>
-					<p className='text-sm'>
-						Highly technical platform for wintersports enthusiasts.
-					</p>
-				</div>
-				<Image
-					src={wintersport}
-					alt='Screenshot of wintersport.nl'
-					className='col-span-7 col-start-6 w-full'
-				/>
+			<PageSection index='02' header='Cases' largerGapY={true}>
+				{Cases.map((item, index) =>
+					index % 2 === 0 ? (
+						<>
+							<div className='col-span-4'>
+								<h3 className='font-serif text-lg mb-10'>{item.name}</h3>
+								<p className='text-sm'>{item.subtitle}</p>
+							</div>
+							<Image
+								src={item.img1}
+								width={1000}
+								height={1000}
+								alt={item.alt1}
+								className='col-span-7 col-start-6 w-full view'
+								onClick={() => {
+									setShow(true)
+									setActiveCase(index)
+								}}
+							/>
+						</>
+					) : (
+						<>
+							<Image
+								src={item.img1}
+								width={1000}
+								height={1000}
+								alt={item.alt1}
+								className='col-span-7 w-full copy'
+								onClick={() => {
+									setShow(true)
+									setActiveCase(index)
+								}}
+							/>
+							<div className='col-span-4 col-start-9'>
+								<h3 className='font-serif text-lg mb-10'>SorryThieves</h3>
+								<p className='text-sm'>
+									Campaign page for E-Bike store VanMoof.
+								</p>
+							</div>
+						</>
+					)
+				)}
 			</PageSection>
 			<Contact index='03' />
-			<Modal
+			<CaseModal
 				show={show}
 				onClose={() => setShow(false)}
-				caseHeader='robstuurman.nl'
-			></Modal>
+				caseHeader={Cases[activeCase].name}
+			>
+				<Case item={Cases[activeCase]} />
+			</CaseModal>
 		</main>
 	)
 }
