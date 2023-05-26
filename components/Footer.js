@@ -5,7 +5,7 @@ import linkedin from '../public/icons/linkedin.svg'
 
 const Footer = () => {
 	return (
-		<footer className='container mx-auto xl:px-10 lg:px-8 md:px-6 px-4 h-32 flex flex-row justify-between'>
+		<footer className='absolute container mx-auto left-0 right-0 bottom-0 xl:px-10 lg:px-8 md:px-6 px-4 h-32 flex flex-row justify-between'>
 			<nav className='my-auto'>
 				<ul className='flex flex-row'>
 					{footerItems.map(item => (

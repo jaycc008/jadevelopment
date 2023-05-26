@@ -2,7 +2,7 @@ import { Cols } from './Cols'
 
 const Contact = ({ index }) => {
 	return (
-		<section className='w-full'>
+		<section className='w-full mb-32'>
 			<h2 className='font-serif mb-18'>
 				<span className='text-lightgreen'>{index}</span> - Contact
 			</h2>
