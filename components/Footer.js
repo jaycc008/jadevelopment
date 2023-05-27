@@ -5,9 +5,9 @@ import linkedin from '../public/icons/linkedin.svg'
 
 const Footer = () => {
 	return (
-		<footer className='absolute container mx-auto left-0 right-0 bottom-0 xl:px-10 lg:px-8 md:px-6 px-4 h-32 flex flex-row justify-between'>
+		<footer className='absolute container mx-auto left-0 right-0 bottom-0 xl:px-10 lg:px-8 md:px-6 px-4 h-32 flex flex-col md:flex-row justify-between'>
 			<nav className='my-auto'>
-				<ul className='flex flex-row'>
+				<ul className='flex flex-col sm:flex-row'>
 					{footerItems.map(item => (
 						<li key={item.id} className='mr-8'>
 							<Link item={item} href={item.href} target='_blank'>
@@ -18,7 +18,9 @@ const Footer = () => {
 									width='24'
 									className='inline mr-2'
 								/>{' '}
-								<span className='align-middle text-sm'>{item.linktext}</span>
+								<span className='align-middle lg:text-sm text-xs'>
+									{item.linktext}
+								</span>
 							</Link>
 						</li>
 					))}
