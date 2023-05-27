@@ -20,8 +20,6 @@ const Work = () => {
 	const [show, setShow] = useState(false)
 	const [activeCase, setActiveCase] = useState(0)
 
-	console.log(activeCase)
-
 	useEffect(() => {
 		document.title = 'JA Development | Work'
 	}, [])

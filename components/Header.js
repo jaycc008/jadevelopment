@@ -2,9 +2,12 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/logo_light.svg'
+import menu from '../public/icons/menu.svg'
+import MenuItems from './MenuItems'
+import MobileMenu from './MobileMenu'
 
 const Header = () => {
-	const [activeId, setActiveId] = useState(0)
+	const [show, setShow] = useState(false)
 
 	return (
 		<div className='flex justify-center'>
@@ -21,36 +24,22 @@ const Header = () => {
 							as='image'
 						/>
 					</Link>
-					<ul className='flex flex-row'>
-						{menuItems.map(item => (
-							<li key={item.id} className='ml-8 last-of-type:-mr-4 text-xs'>
-								<Link
-									item={item}
-									href={item.href}
-									className={
-										activeId === item.id
-											? 'p-4 font-serif active'
-											: 'p-4 font-serif'
-									}
-									onClick={() => setActiveId(item.id)}
-								>
-									{item.linktext}
-								</Link>
-							</li>
-						))}
+					<ul className='hidden lg:flex flex-row'>
+						<MenuItems />
 					</ul>
+					<button
+						className='block lg:hidden'
+						onClick={() => {
+							setShow(true)
+						}}
+					>
+						<Image src={menu} alt='menu button' />
+					</button>
+					<MobileMenu show={show} onClose={() => setShow(false)} />
 				</nav>
 			</header>
 		</div>
 	)
 }
-
-const menuItems = [
-	{ id: 0, linktext: 'home', href: '/' },
-	{ id: 1, linktext: 'my work', href: '/work' },
-	{ id: 2, linktext: 'services', href: '/services' },
-	{ id: 3, linktext: 'about me', href: '/about' },
-	{ id: 4, linktext: 'contact', href: '/contact' },
-]
 
 export default Header
