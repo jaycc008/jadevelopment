@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import menuItems from '../data/MenuItems.json'
 
-const MenuItems = ({ onClose }) => {
+const MenuItems = ({ onClose = false }) => {
 	const [activeId, setActiveId] = useState(0)
 
 	return menuItems.map(item => (
@@ -18,7 +18,7 @@ const MenuItems = ({ onClose }) => {
 				}
 				onClick={() => {
 					setActiveId(item.id)
-					onClose()
+					onClose && onClose()
 				}}
 			>
 				{item.linktext}
