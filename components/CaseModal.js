@@ -34,9 +34,11 @@ const CaseModal = ({ show, onClose, caseHeader, children }) => {
 		>
 			<div ref={nodeRef} className='modal w-full fixed top-0 left-0 z-10'>
 				<div className='inner-modal w-full bg-platinum xl:px-10 lg:px-8 md:px-6 px-4'>
-					<button onClick={onClose} className='fixed right-10 top-10'>
-						<Image src={close} alt='' width='24' />
-					</button>
+					<div className='container mx-auto flex fixed top-0 left-0 right-0 h-32'>
+						<button onClick={onClose} className='ml-auto my-auto p-2'>
+							<Image src={close} alt='' width='24' />
+						</button>
+					</div>
 					<div className='container mx-auto mt-10'>
 						<span className='text-xs'>Case</span>
 						<h1 className='text-xl font-serif w-5/12 mb-30'>{caseHeader}</h1>
