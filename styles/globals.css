@@ -167,3 +167,9 @@ h2 {
 		font-size: 3rem;
 	}
 }
+
+@media (max-width: 640px) {
+	.underline-yellow:hover a::after {
+		height: 4px;
+	}
+}

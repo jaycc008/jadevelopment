@@ -18,7 +18,7 @@ const Footer = () => {
 									width='24'
 									className='inline mr-2'
 								/>{' '}
-								<span className='align-middle lg:text-sm text-xs'>
+								<span className='align-middle text-xs lg:text-sm'>
 									{item.linktext}
 								</span>
 							</Link>

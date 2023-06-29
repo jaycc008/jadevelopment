@@ -12,7 +12,7 @@ export function Cta({
 	return (
 		<Link
 			href={href}
-			className={`font-serif text-md text-yellow ${className}`}
+			className={`font-serif text-sm md:text-md text-yellow ${className}`}
 			target={target}
 		>
 			{linkText} <Image className='inline' alt='' src={icon} />
