@@ -75,7 +75,7 @@ nav li:hover a::after,
 }
 
 .full-width {
-	width: calc(100vw - 0.5rem);
+	width: 100vw;
 	position: relative;
 	left: 50%;
 	right: 50%;

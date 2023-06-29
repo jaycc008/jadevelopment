@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import Interests from '../components/Interests'
 
 import jack from '../public/images/jack-of-hearts.svg'
+import monkey from '../public/images/monkey.png'
 import KeyVisual from '../components/KeyVisual'
 import PageSection from '../components/PageSection'
 import { Cta } from '../components/Cta'
@@ -46,10 +47,14 @@ const About = () => {
 					linkText='JA, I want that'
 				/>
 			</PageSection>
-			<PageSection index='02' header='Costa Rica based' />
-			<KeyVisual src='monkey'>
+			<PageSection
+				index='02'
+				header='Costa Rica based'
+				className='hidden lg:block'
+			/>
+			<KeyVisual src='monkey' bgPosition='bg-center' className='hidden lg:flex'>
 				<Cols>
-					<p className='text-md font-serif col-span-3'>
+					<p className='text-sm xl:text-md font-serif col-span-5 xl:col-span-4 xl:col-start-2 2xl:col-start-1 2xl:col-span-3'>
 						When I say I love adventure, I truly mean that. While my first 31
 						years took place in my home country - The Netherlands - we moved to
 						Costa Rica in the fall of 2022. Do you want to go on an{' '}
@@ -57,6 +62,19 @@ const About = () => {
 					</p>
 				</Cols>
 			</KeyVisual>
+			<PageSection index='02' header='Costa Rica based' className='lg:hidden'>
+				<Image
+					src={monkey}
+					alt='monkey looking through the trees'
+					className='col-span-12 sm:col-span-8 sm:col-start-3 hidden sm:block'
+				/>
+				<p className='text-sm col-span-12'>
+					When I say I love adventure, I truly mean that. While my first 31
+					years took place in my home country - The Netherlands - we moved to
+					Costa Rica in the fall of 2022. Do you want to go on an{' '}
+					<span className='text-yellow font-bold'>adventure</span> with me?
+				</p>
+			</PageSection>
 			<PageSection index='03' header='Personal interests'>
 				<Interests />
 			</PageSection>

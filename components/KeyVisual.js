@@ -1,6 +1,12 @@
-const KeyVisual = ({ pageName, pageHeader, src, children, className }) => {
+const KeyVisual = ({
+	pageName,
+	pageHeader,
+	src,
+	children,
+	bgPosition = 'bg-center lg:bg-right-top',
+	className,
+}) => {
 	let bgClass
-
 	if (src) {
 		bgClass = `bg-${src}-background`
 	} else {
@@ -9,10 +15,7 @@ const KeyVisual = ({ pageName, pageHeader, src, children, className }) => {
 
 	return (
 		<section
-			className={
-				'h-[80vh] full-width bg-cover bg-center lg:bg-right-top flex flex-col justify-end mb-10 md:mb-20 ' +
-				bgClass
-			}
+			className={`h-[80vh] full-width bg-cover flex flex-col justify-end mb-10 md:mb-20 ${bgClass} ${bgPosition} ${className}`}
 		>
 			<div className='full-width min-h-1/2 keyvisual-gradient flex flex-col justify-end px-4 md:px-6 lg:px-8 xl:px-10'>
 				<div className='container mx-auto text-white my-12'>
