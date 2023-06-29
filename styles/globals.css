@@ -7,10 +7,6 @@ html {
 	color: theme('colors.green');
 }
 
-h2 {
-	font-size: 3rem;
-}
-
 .active::after,
 .menu-tabs span:hover::after {
 	content: '';
@@ -79,7 +75,7 @@ nav li:hover a::after,
 }
 
 .full-width {
-	width: calc(100vw - 0.5rem);
+	width: 100vw;
 	position: relative;
 	left: 50%;
 	right: 50%;
@@ -119,6 +115,10 @@ nav li:hover a::after,
 	background-image: url('../public/images/jayce-yuna.png');
 }
 
+.bg-monkey-background {
+	background-image: url('../public/images/monkey.png');
+}
+
 .modal {
 	height: 100%;
 }
@@ -156,4 +156,14 @@ nav li:hover a::after,
 	pointer-events: none;
 	transform: translateY(-400px);
 	transition: all 500ms;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+@media (min-width: 640px) {
+	h2 {
+		font-size: 3rem;
+	}
 }
