@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Fragment } from 'react'
 
 import sorryThieves from '../public/images/sorry-thieves.png'
 import wintersport from '../public/images/wintersport.png'
@@ -93,7 +93,7 @@ const Work = () => {
 			<PageSection index='02' header='Cases' largerGapY={true}>
 				{Cases.map((item, index) =>
 					index % 2 === 0 ? (
-						<>
+						<Fragment key={index}>
 							<div className='col-span-4'>
 								<h3 className='font-serif text-lg mb-10'>{item.name}</h3>
 								<p className='text-sm'>{item.subtitle}</p>
@@ -109,9 +109,9 @@ const Work = () => {
 									setActiveCase(index)
 								}}
 							/>
-						</>
+						</Fragment>
 					) : (
-						<>
+						<Fragment key={index}>
 							<Image
 								src={item.img1}
 								width={1000}
@@ -129,7 +129,7 @@ const Work = () => {
 									Campaign page for E-Bike store VanMoof.
 								</p>
 							</div>
-						</>
+						</Fragment>
 					)
 				)}
 			</PageSection>
