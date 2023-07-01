@@ -1,6 +1,6 @@
 [
 	{
-		"name": "robstuurman.nl",
+		"name": "Rob Stuurman",
 		"subtitle": "Beautiful onepage website for a spiritual healer.",
 		"services": ["Frontend", "Deployment", "Aftercare"],
 		"years": "2020 - Now",
@@ -40,7 +40,7 @@
 		"paragraph4": "All in all I definitely learned a lot from this on a technical level, but also on a personal level: That I should stand my ground and make a case for not using too many new technologies at once, especially when it is only for one page."
 	},
 	{
-		"name": "wintersport.nl",
+		"name": "Wintersport",
 		"subtitle": "Highly technical platform for wintersports enthusiasts.",
 		"services": ["Fullstack Development", "Deployment", "CI/CD"],
 		"years": "2020 - 2021",

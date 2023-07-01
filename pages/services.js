@@ -34,7 +34,7 @@ const Services = () => {
 				</div>
 			</PageSection>
 			<PageSection index='02' header='Design'>
-				<p className='text-xs sm:text-sm md:text-md mb-4 col-span-12 sm:col-start-2 sm:col-span-10 mb-4'>
+				<p className='text-xs sm:text-sm md:text-md col-span-12 sm:col-start-2 sm:col-span-10 mb-4'>
 					While I am not a designer by trade, I have a keen eye for design and
 					can create a beautiful UI for you myself or guide you in this process.
 				</p>
@@ -55,7 +55,7 @@ const Services = () => {
 				</div>
 			</PageSection>
 			<PageSection index='03' header='Development'>
-				<p className='text-xs sm:text-sm md:text-md mb-4 col-span-12 sm:col-start-2 sm:col-span-10 mb-4'>
+				<p className='text-xs sm:text-sm md:text-md col-span-12 sm:col-start-2 sm:col-span-10 mb-4'>
 					In my career I have worked mostly as a Fullstack developer and would
 					love to provide you with the full package as well.
 				</p>
@@ -94,7 +94,7 @@ const Services = () => {
 				</div>
 			</PageSection>
 			<PageSection index='04' header='Deployment'>
-				<p className='text-xs sm:text-sm md:text-md mb-4 col-span-12 sm:col-start-2 sm:col-span-10 mb-4'>
+				<p className='text-xs sm:text-sm md:text-md col-span-12 sm:col-start-2 sm:col-span-10 mb-4'>
 					I have seen many people struggle with the deployment of their website,
 					domain registration and management of their website in general.
 					Because of this, I like to help you from A to Z by helping with all of
@@ -127,7 +127,7 @@ const Services = () => {
 				</div>
 			</PageSection>
 			<PageSection index='05' header='Aftercare'>
-				<p className='text-xs sm:text-sm md:text-md mb-4 col-span-12 sm:col-start-2 sm:col-span-10 mb-4'>
+				<p className='text-xs sm:text-sm md:text-md col-span-12 sm:col-start-2 sm:col-span-10 mb-4'>
 					After everything is set up, I will make sure you feel confident in
 					managing your content. I will give you the right tools to make sure
 					you know how to updates on your website. In case something goes wrong,
