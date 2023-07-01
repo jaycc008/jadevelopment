@@ -11,12 +11,12 @@ const Contact = () => {
 	return (
 		<section className='flex h-[100vh]'>
 			<div className='flex-column justify-center m-auto'>
-				<p className='2xl:text-2xl xl:text-xl lg:text-lg sm:text-md text-sm text-center'>
+				<p className='text-sm sm:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-center'>
 					Send me a message!
 				</p>
-				<div className='text-center underline-yellow 2xl:mt-24 xl:mt-6'>
+				<div className='text-center underline-yellow xl:mt-6 2xl:mt-24'>
 					<a
-						className='2xl:text-2xl xl:text-xl lg:text-lg sm:text-md text-sm font-serif copy'
+						className='text-sm sm:text-md lg:text-lg xl:text-xl 2xl:text-2xl font-serif copy'
 						onClick={e => {
 							const classes = e.target.classList
 							if (!classes.contains('copied')) classes.add('copied')
