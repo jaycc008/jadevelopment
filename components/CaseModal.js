@@ -40,8 +40,10 @@ const CaseModal = ({ show, onClose, caseHeader, children }) => {
 						</button>
 					</div>
 					<div className='container mx-auto mt-10'>
-						<span className='text-xs'>Case</span>
-						<h1 className='text-xl font-serif w-5/12 mb-30'>{caseHeader}</h1>
+						<span className='sm:text-xs'>Case</span>
+						<h1 className='text-sm sm:text-md md:text-lg md:text-xl font-serif mb-10 sm:mb-16 md:mb-30'>
+							{caseHeader}
+						</h1>
 						{children}
 					</div>
 				</div>
