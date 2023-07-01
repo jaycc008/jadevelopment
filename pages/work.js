@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useEffect, useState, Fragment } from 'react'
+import { useEffect, useState } from 'react'
 
 import design from '../public/icons/design.svg'
 import develop from '../public/icons/develop.svg'
