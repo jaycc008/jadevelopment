@@ -35,7 +35,7 @@ const MobileMenu = ({ show, onClose }) => {
 		>
 			<div ref={nodeRef} className='modal w-full fixed top-0 left-0 z-10'>
 				<div className='inner-modal w-full bg-platinum xl:px-10 lg:px-8 md:px-6 px-4'>
-					<div className='container mx-auto flex absolute top-0 left-0 right-0 h-32'>
+					<div className='container mx-auto flex absolute top-0 left-0 right-0 h-32 xl:px-10 lg:px-8 md:px-6 px-4'>
 						<button onClick={onClose} className='ml-auto my-auto p-2'>
 							<Image src={close} alt='' width='24' />
 						</button>
