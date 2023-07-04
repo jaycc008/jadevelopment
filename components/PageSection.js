@@ -1,5 +1,5 @@
 import { Cols } from './Cols'
-const PageSection = ({ index, header, largerGapY, className, children }) => {
+const PageSection = ({ index, header, largerGapY, className='', children }) => {
 	return (
 		<section
 			className={children ? `pb-20 sm:pb-30 lg:pb-50 ${className}` : className}

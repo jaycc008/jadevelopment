@@ -31,7 +31,7 @@ const Work = () => {
 					<h3 className='font-serif text-sm sm:text-md md:text-lg mb-4 sm:mb-8'>
 						<Image
 							src={develop}
-							alt='develop icon'
+							alt='development icon'
 							width='40'
 							className='inline mr-4 md:hidden'
 						/>
@@ -46,7 +46,7 @@ const Work = () => {
 				</div>
 				<Image
 					src={develop}
-					alt='develop icon'
+					alt='development icon'
 					className='col-span-2 col-start-11 xl:col-start-10 xl:col-span-1 hidden md:flex my-auto'
 				/>
 				<div className='col-span-12 sm:col-start-2 sm:col-span-10 md:col-span-8 md:col-start-2 lg:col-span-6 lg:col-start-2'>
@@ -75,7 +75,7 @@ const Work = () => {
 					<h3 className='font-serif text-sm sm:text-md md:text-lg mb-4 sm:mb-8'>
 						<Image
 							src={deploy}
-							alt='deploy icon'
+							alt='deployment icon'
 							width='40'
 							className='inline mr-4 md:hidden'
 						/>
@@ -91,7 +91,7 @@ const Work = () => {
 				</div>
 				<Image
 					src={deploy}
-					alt='deploy icon'
+					alt='deployment icon'
 					className='col-span-2 col-start-11 xl:col-start-10 xl:col-span-1 hidden md:flex my-auto'
 				/>
 				<div className='col-span-12 sm:col-start-2 sm:col-span-10 md:col-span-8 md:col-start-2 lg:col-span-6 lg:col-start-2'>
