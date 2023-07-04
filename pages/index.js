@@ -202,7 +202,7 @@ const Home = () => {
 					</ul>
 				</div>
 
-				<div className='order-6 lg:order-5 col-span-12 sm:col-span-10 sm:col-start-2 lg:order-5 lg:col-span-4 lg:col-start-2 lg:mt-40 xl:mt-50'>
+				<div className='order-6 lg:order-5 col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-4 lg:col-start-2 lg:mt-40 xl:mt-50'>
 					<Link href='https://wintersport.nl/' target='_blank' className='hidden lg:block mb-8 xl:mb-16 xl:mt-40 2xl:mt-50'>
 						<h3 className='font-serif text-lg text-lightgreen'>
 							Wintersport
