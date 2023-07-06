@@ -28,7 +28,7 @@ const Header = () => {
 							className='block md:hidden'
 							src={logo}
 							alt='logo'
-							width={75}
+							width='auto'
 							height={46}
 							priority
 							rel='preload'
@@ -64,6 +64,14 @@ const Header = () => {
 			</header>
 		</div>
 	)
+}
+
+export const getStaticProps = () => {
+	return {
+		props: {
+			buildTimestamp: Date.now()
+		}
+	}
 }
 
 export default Header
