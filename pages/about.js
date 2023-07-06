@@ -24,7 +24,7 @@ const About = () => {
 					alt='jack of hearts'
 					className='hidden md:block col-span-3 lg:col-span-2 lg:col-start-2'
 				/>
-				<div className='col-span-12 sm:col-span-10 md:col-span-8 md:col-span-6 lg:col-span-6 sm:col-start-2 md:col-start-5 pt-0 md:pt-30'>
+				<div className='col-span-12 sm:col-span-10 md:col-span-6 lg:col-span-6 sm:col-start-2 md:col-start-5 pt-0 md:pt-30'>
 					<p className='sm:mb-4 md:mb-8'>
 						Starting out as tester, I learned programming and designing once I
 						started my Bachelor&quot;s Degree Mediatechnology at the University
