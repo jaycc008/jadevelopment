@@ -47,7 +47,7 @@ const Case = ({ item }) => {
 				<Image
 					src={item.img2}
 					alt={item.alt2}
-					className='full-width max-w-none  mb-8 sm:mb-12 md:mb-20 col-span-12'
+					className='col-span-12 sm:col-span-10 sm:col-start-2 w-full max-w-none mb-8 sm:mb-12 md:mb-20'
 					width='1000'
 					height='1000'
 				/>
@@ -64,7 +64,7 @@ const Case = ({ item }) => {
 				<Image
 					src={item.img3}
 					alt={item.alt3}
-					className='full-width max-w-none  mb-8 sm:mb-12 md:mb-20 col-span-12'
+					className='col-span-12 sm:col-span-10 sm:col-start-2 w-full max-w-none mb-8 sm:mb-12 md:mb-20'
 					width='1000'
 					height='1000'
 				/>
@@ -75,6 +75,20 @@ const Case = ({ item }) => {
 					</p>
 					<p className='text-xs sm:text-sm md:text-md mb-4 sm:mb-6'>
 						{item.paragraph3}
+					</p>
+				</div>
+
+				<Image
+					src={item.img4}
+					alt={item.alt4}
+					className={`col-span-12 sm:col-span-10 sm:col-start-2 w-full max-w-none mb-8 sm:mb-12 md:mb-20 ${item.img4 ? '' : 'hidden'}`}
+					width='1000'
+					height='1000'
+				/>
+
+				<div className='col-span-12 sm:col-span-8 sm:col-start-3'>
+					<p className={`text-sm sm:text-md md:text-lg lg:text-title font-serif mb-4 sm:mb-10 ${item.title4 ? '' : 'hidden'}`}>
+						{item.title4}
 					</p>
 					<p className='text-xs sm:text-sm md:text-md  mb-8 sm:mb-12 md:mb-20'>
 						{item.paragraph4}
