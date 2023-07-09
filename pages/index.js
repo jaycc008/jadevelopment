@@ -16,7 +16,7 @@ import mysql from '../public/icons/mysql.svg'
 import apollo from '../public/icons/apollo.svg'
 import reactSpring from '../public/icons/react-spring.svg'
 
-import profilePic from '../public/jayce.svg'
+import profilePic from '../public/images/jayce.svg'
 import rob from '../public/images/rob.png'
 import sorryThieves from '../public/images/sorry-thieves.png'
 import wintersport from '../public/images/wintersport.png'

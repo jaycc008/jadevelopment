@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../public/logo_light.svg'
+import logo from '../public/images/logo.svg'
 import menu from '../public/icons/menu.svg'
 import MenuItems from './MenuItems'
 import MobileMenu from './MobileMenu'
