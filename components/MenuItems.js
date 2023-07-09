@@ -4,12 +4,7 @@ import { useRouter } from 'next/router';
 import menuItems from '../data/MenuItems.json'
 
 const MenuItems = ({ onClose = false }) => {
-	const [activePath, setActivePath] = useState('/')
 	const router = useRouter()
-
-	console.log(router)
-	console.log(menuItems)
-	console.log(activePath)
 
 	return menuItems.map(item => (
 		<li
@@ -20,10 +15,9 @@ const MenuItems = ({ onClose = false }) => {
 				item={item}
 				href={item.path}
 				className={
-					activePath === item.path ? 'p-4 font-serif active' : 'p-4 font-serif'
+					router.pathname == item.path ? 'p-4 font-serif active' : 'p-4 font-serif'
 				}
 				onClick={() => {
-					setActivePath(item.path)
 					onClose && onClose()
 				}}
 			>
