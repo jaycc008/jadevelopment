@@ -66,12 +66,4 @@ const Header = () => {
 	)
 }
 
-export const getStaticProps = () => {
-	return {
-		props: {
-			buildTimestamp: Date.now()
-		}
-	}
-}
-
 export default Header

@@ -1,23 +1,23 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import menuItems from '../data/MenuItems.json'
 
 const MenuItems = ({ onClose = false }) => {
-	const [activeId, setActiveId] = useState(0)
+	const router = useRouter()
 
 	return menuItems.map(item => (
 		<li
-			key={item.id}
+			key={item.path}
 			className='mb-8 lg:mb-0 lg:ml-8 lg:last-of-type:-mr-4 text-xs'
 		>
 			<Link
 				item={item}
-				href={item.href}
+				href={item.path}
 				className={
-					activeId === item.id ? 'p-4 font-serif active' : 'p-4 font-serif'
+					router.pathname == item.path ? 'p-4 font-serif active' : 'p-4 font-serif'
 				}
 				onClick={() => {
-					setActiveId(item.id)
 					onClose && onClose()
 				}}
 			>
