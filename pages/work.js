@@ -118,7 +118,11 @@ const Work = () => {
 						alt='test icon'
 						className='col-span-2 col-start-11 xl:col-start-10 xl:col-span-1 hidden md:flex my-auto'
 					/>
-					<a className='font-serif text-md text-yellow col-span-12 col-start-2'>
+					<a className='font-serif text-md text-yellow col-span-12 col-start-2'
+						href="/files/cv_jayce-ardon.pdf"
+						alt="download curriculum Vitae file"
+						target="_blank"
+						rel="noopener noreferrer">
 						download cv
 						<Image className='inline ml-4' alt='' src={arrowDown} />
 					</a>
