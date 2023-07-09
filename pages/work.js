@@ -24,7 +24,7 @@ const Work = () => {
 		<>
 			<Head>
 				<title>JA Development | Work</title>
-				<meta name='viewport' content='initial-scale=1.0, width=device-width'/>
+				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 			</Head>
 			<main>
 				<KeyVisual pageName='My work' pageHeader='Projects & Experience' />
@@ -63,9 +63,9 @@ const Work = () => {
 						</h3>
 						<p className='text-xs sm:text-sm mb-8 md:mb-16'>
 							While more of a complementary skill, I have designed multiple
-							applications and websites. Due to my background as Quality Assurance
-							Tester, I would usually chip in with design decisions wherever I
-							worked.
+							applications and websites. Due to my background as Quality
+							Assurance Tester, I would usually chip in with design decisions
+							wherever I worked.
 						</p>
 					</div>
 					<Image
@@ -85,8 +85,8 @@ const Work = () => {
 						</h3>
 						<p className='text-xs sm:text-sm mb-8 md:mb-16'>
 							During my career I have had ample opportunity to deploy websites,
-							webapplications and webshops. I also helped my own clients from A-Z
-							with deploying and hosting numerous websites, some were custom
+							webapplications and webshops. I also helped my own clients from
+							A-Z with deploying and hosting numerous websites, some were custom
 							built, some were WordPress. During my studies I learned how to
 							run/manage my own server on AWS.
 						</p>
@@ -109,8 +109,9 @@ const Work = () => {
 						<p className='text-xs sm:text-sm mb-8 md:mb-16'>
 							Before I got into developing I worked as a tester, where I had to
 							document, write testcases and perform functional-, acceptance- and
-							regression tests. This created a deeper understanding in how the end
-							user thinks, because you really dive into their line of thinking.
+							regression tests. This created a deeper understanding in how the
+							end user thinks, because you really dive into their line of
+							thinking.
 						</p>
 					</div>
 					<Image
@@ -118,11 +119,13 @@ const Work = () => {
 						alt='test icon'
 						className='col-span-2 col-start-11 xl:col-start-10 xl:col-span-1 hidden md:flex my-auto'
 					/>
-					<a className='font-serif text-md text-yellow col-span-12 col-start-2'
-						href="/files/cv_jayce-ardon.pdf"
-						alt="download curriculum Vitae file"
-						target="_blank"
-						rel="noopener noreferrer">
+					<a
+						className='font-serif text-md text-yellow col-span-12 col-start-2'
+						href='/files/cv_jayce-ardon.pdf'
+						alt='download curriculum Vitae file'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
 						download cv
 						<Image className='inline ml-4' alt='' src={arrowDown} />
 					</a>
@@ -130,7 +133,7 @@ const Work = () => {
 				<PageSection index='02' header='Cases' largerGapY={true}>
 					{Cases.map((item, index) =>
 						index % 2 === 0 ? (
-							<Cols className='col-span-12' key={index}>
+							<Cols className='col-span-12' key={index} id={item.slug}>
 								<div className='col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4'>
 									<h3 className='font-serif text-sm sm:text-md xl:text-lg xl:mb-10'>
 										{item.name}
@@ -150,7 +153,7 @@ const Work = () => {
 								/>
 							</Cols>
 						) : (
-							<Cols className='col-span-12' key={index}>
+							<Cols className='col-span-12' key={index} id={item.slug}>
 								<Image
 									src={item.img1}
 									width={1000}
