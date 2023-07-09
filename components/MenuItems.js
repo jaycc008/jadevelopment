@@ -13,17 +13,17 @@ const MenuItems = ({ onClose = false }) => {
 
 	return menuItems.map(item => (
 		<li
-			key={item.id}
+			key={item.path}
 			className='mb-8 lg:mb-0 lg:ml-8 lg:last-of-type:-mr-4 text-xs'
 		>
 			<Link
 				item={item}
-				href={item.href}
+				href={item.path}
 				className={
-					activePath === item.href ? 'p-4 font-serif active' : 'p-4 font-serif'
+					activePath === item.path ? 'p-4 font-serif active' : 'p-4 font-serif'
 				}
 				onClick={() => {
-					setActivePath(item.href)
+					setActivePath(item.path)
 					onClose && onClose()
 				}}
 			>
