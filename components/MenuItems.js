@@ -1,9 +1,15 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import menuItems from '../data/MenuItems.json'
 
 const MenuItems = ({ onClose = false }) => {
-	const [activeId, setActiveId] = useState(0)
+	const [activePath, setActivePath] = useState('/')
+	const router = useRouter()
+
+	console.log(router)
+	console.log(menuItems)
+	console.log(activePath)
 
 	return menuItems.map(item => (
 		<li
@@ -14,10 +20,10 @@ const MenuItems = ({ onClose = false }) => {
 				item={item}
 				href={item.href}
 				className={
-					activeId === item.id ? 'p-4 font-serif active' : 'p-4 font-serif'
+					activePath === item.href ? 'p-4 font-serif active' : 'p-4 font-serif'
 				}
 				onClick={() => {
-					setActiveId(item.id)
+					setActivePath(item.href)
 					onClose && onClose()
 				}}
 			>
