@@ -1,11 +1,12 @@
 [
 	{
 		"name": "Rob Stuurman",
+		"slug": "rob-stuurman",
 		"subtitle": "Beautiful onepage website for a spiritual healer.",
 		"services": ["Frontend", "Deployment", "Aftercare"],
 		"years": "2020 - Now",
 		"href": "https://robstuurman.nl/",
-		"intro": "Rob Stuurman loves helping people through his unique approach as energetic healer. His wife, Lya, does that as well, but in her own way as Reiki Master. Both of them have more than 20 years of experience as energetic healers, but they weren’t reaching that many people. That is where I come in.",
+		"intro": "Rob Stuurman loves helping people through his unique approach as an energetic healer. His wife, Lya, does that as well, but in her own way as Reiki Master. Both of them have more than 20 years of experience as energetic healers, but they weren’t reaching that many people. That is where I come in.",
 		"img1": "/images/rob.png",
 		"img2": "/images/rob-2.png",
 		"img3": "/images/rob-3.png",
@@ -14,13 +15,14 @@
 		"title2": "Sounds nice, but how did you build the website?",
 		"alt3": "screenshot of the 'how I work'-element",
 		"title3": "And what about hosting?",
-		"paragraph1": "Rob's website had a very old look-and-feel to it, think late 90’s. To create a new, fresh design they contacted Soulia Moor from Moor Design. I chipped in with some feedback on the design and did the programming. Besides that they also couldn’t access their files, so they wanted to be hosted on a different platform. In this process I guided them and contacted the previous developer of the old website.",
+		"paragraph1": "Rob's website had a very old look-and-feel to it, think late 90’s. To create a new, fresh design they contacted Soulia Moor from Moor Design. I chipped in with some feedback on the design and did the programming. Besides that they also couldn’t access their files, so they wanted to be hosted on a different platform. In this process I guided them and contacted the previous developer to access their files.",
 		"paragraph2": "Let me guide you through my process! At first, to speed up the time it took to develop and deploy Soulia and me decided it was best to create a One Pager without a CMS for now. Since I did want to have this option for a later date, I decided to go with a robust setup of Vue, Vuetify and Nuxt.",
-		"paragraph3": "I did a market research and compared multiple hosting providers to find out which one was the best option for Rob and Lya. I always highly prefer ones with good customer service so that in the case something breaks, you have helpful people to talk to.",
-		"paragraph4": "In the end Cloud86 came out ahead of the other companies on customer service, price, uptime and speed. The website is currently in my aftercare, as such I update regularly and redo parts of the site when requested. Check out the result through the link below."
+		"paragraph3": "I did a market research and compared multiple hosting providers to find out which one was the best option for Rob and Lya. I always highly prefer ones with good customer service so that in the case something breaks, you have helpful service employees to talk to.",
+		"paragraph4": "In the end Cloud86 came out ahead of the other companies on customer service, price, uptime and speed. The website is currently in my aftercare, as such I update it regularly and redo parts of the site when requested. Check out the result through the link below."
 	},
 	{
 		"name": "SorryThieves",
+		"slug": "sorry-thieves",
 		"subtitle": "Campaign page for E-Bike store VanMoof.",
 		"services": ["Frontend"],
 		"years": "2019",
@@ -41,6 +43,7 @@
 	},
 	{
 		"name": "Wintersport",
+		"slug": "wintersport",
 		"subtitle": "Highly technical platform for wintersports enthusiasts.",
 		"services": ["Fullstack Development", "Deployment", "CI/CD"],
 		"years": "2020 - 2021",
