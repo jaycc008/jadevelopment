@@ -27,7 +27,11 @@ const Work = () => {
 				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 			</Head>
 			<main>
-				<KeyVisual pageName='My work' pageHeader='Projects & Experience' />
+				<KeyVisual
+					pageName='My work'
+					pageHeader='Projects & Experience'
+					bgPosition='bg-[25%_bottom] sm:bg-[center_70%]'
+				/>
 				<PageSection index='01' header='Experience'>
 					<div className='col-span-12 sm:col-start-2 sm:col-span-10 md:col-span-8 md:col-start-2 lg:col-span-6 lg:col-start-2'>
 						<h3 className='font-serif text-sm sm:text-md md:text-lg mb-4 sm:mb-8'>
@@ -40,10 +44,10 @@ const Work = () => {
 							Development
 						</h3>
 						<p className='text-xs sm:text-sm mb-8 md:mb-16'>
-							I have worked most of my career as a Fullstack Webdeveloper, but
-							worked solely on Frontend as well. I started out with PHP and
-							ASP.NET, went through Angular and React and eventually learned Vue
-							as well.
+							Most of my career I worked as a Fullstack Webdeveloper, but I
+							worked solely on Frontend as well. I started out working with PHP
+							and ASP.NET, then learned Angular, onto React and eventually
+							learned Vue as well.
 						</p>
 					</div>
 					<Image
@@ -87,8 +91,8 @@ const Work = () => {
 							During my career I have had ample opportunity to deploy websites,
 							webapplications and webshops. I also helped my own clients from
 							A-Z with deploying and hosting numerous websites, some were custom
-							built, some were WordPress. During my studies I learned how to
-							run/manage my own server on AWS.
+							built, some were WordPress. During my studies I also learned how
+							to run my own server on AWS.
 						</p>
 					</div>
 					<Image
@@ -109,7 +113,7 @@ const Work = () => {
 						<p className='text-xs sm:text-sm mb-8 md:mb-16'>
 							Before I got into developing I worked as a tester, where I had to
 							document, write testcases and perform functional-, acceptance- and
-							regression tests. This created a deeper understanding in how the
+							regression tests. This created a deeper understanding of how the
 							end user thinks, because you really dive into their line of
 							thinking.
 						</p>

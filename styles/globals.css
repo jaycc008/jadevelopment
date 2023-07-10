@@ -107,12 +107,15 @@ nav li:hover a::after,
 }
 
 .bg-services-background {
-	background-image: url('../public/images/jayce-coffee.png');
+	background-image: url('../public/images/jayce-talking.jpg');
 }
 
-.bg-about-background,
-.bg-mywork-background {
+.bg-about-background {
 	background-image: url('../public/images/jayce-yuna.png');
+}
+
+.bg-mywork-background {
+	background-image: url('../public/images/jayce-working.jpg');
 }
 
 .bg-monkey-background {
