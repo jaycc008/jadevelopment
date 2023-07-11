@@ -1,0 +1,7 @@
+[
+	{"linktext": "home", "path": "/" },
+	{"linktext": "my work", "path": "/work" },
+	{"linktext": "services", "path": "/services" },
+	{"linktext": "about me", "path": "/about" },
+	{"linktext": "contact", "path": "/contact" }
+]

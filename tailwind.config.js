@@ -47,7 +47,13 @@ module.exports = {
 		},
 		extend: {
 			fontSize: {
-				cta: ['2rem', '2.5rem'], // 32px,
+				'xs': '1.125rem', // 18px
+				'sm': '1.5rem', // 24px
+				'md': '2rem', // 32px
+				'lg': '2.5rem', // 40px
+				'title': '3rem', // 48px
+				'xl': '5rem', // 80px
+				'2xl': '6rem', // 96px
 			},
 			colors: {
 				onyx: '#1a1a1a',
@@ -63,10 +69,10 @@ module.exports = {
 				30: '7.5rem', // 120px
 				48: '12rem', // 192px
 				50: '12.5rem', // 200px
-				100: '25rem', // 200px
+				100: '25rem', // 400px
 			},
-			backgroundImage: {
-				'hero-background': "url('../public/images/jayce-yuna.png')",
+			minHeight: {
+				'1/2': '50%',
 			},
 		},
 	},

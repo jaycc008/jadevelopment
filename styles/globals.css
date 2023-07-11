@@ -7,10 +7,6 @@ html {
 	color: theme('colors.green');
 }
 
-h2 {
-	font-size: 3rem;
-}
-
 .active::after,
 .menu-tabs span:hover::after {
 	content: '';
@@ -66,6 +62,10 @@ nav li:hover a::after,
 	background: theme('colors.yellow');
 }
 
+.view:hover {
+	cursor: url('~/public/icons/view.svg'), pointer;
+}
+
 .copy:hover {
 	cursor: url('~/public/icons/copy.svg'), pointer;
 }
@@ -96,4 +96,83 @@ nav li:hover a::after,
 	width: 100%;
 	bottom: -0.5rem;
 	left: 0;
+}
+
+.keyvisual-gradient {
+	background: linear-gradient(
+		180deg,
+		rgba(60, 46, 33, 0) 32.66%,
+		rgba(60, 46, 33, 0.4) 60.25%
+	);
+}
+
+.bg-services-background {
+	background-image: url('../public/images/jayce-talking.jpg');
+}
+
+.bg-about-background {
+	background-image: url('../public/images/jayce-yuna.png');
+}
+
+.bg-mywork-background {
+	background-image: url('../public/images/jayce-working.jpg');
+}
+
+.bg-monkey-background {
+	background-image: url('../public/images/monkey.png');
+}
+
+.modal {
+	height: 100%;
+}
+
+.inner-modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.modal-enter {
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-400px);
+}
+
+.modal-enter-active {
+	opacity: 1;
+	pointer-events: visible;
+	transform: translateY(0);
+	transition: all 500ms;
+}
+
+.modal-exit {
+	opacity: 1;
+	pointer-events: visible;
+	transform: translateY(0);
+}
+
+.modal-exit-active {
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-400px);
+	transition: all 500ms;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+@media (min-width: 640px) {
+	h2 {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 640px) {
+	.underline-yellow:hover a::after {
+		height: 4px;
+	}
 }

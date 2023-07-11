@@ -1,17 +1,21 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../public/logo_light.svg'
+import logo from '../public/images/logo.svg'
+import menu from '../public/icons/menu.svg'
+import MenuItems from './MenuItems'
+import MobileMenu from './MobileMenu'
 
 const Header = () => {
-	const [activeId, setActiveId] = useState(0)
+	const [show, setShow] = useState(false)
 
 	return (
 		<div className='flex justify-center'>
-			<header className='h-32 w-full fixed z-10 top-0 bg-platinum_opacity xl:px-10 lg:px-8 md:px-6 px-4'>
+			<header className='h-16 md:h-32 w-full fixed z-10 top-0 bg-platinum_opacity xl:px-10 lg:px-8 md:px-6 px-4'>
 				<nav className='flex flex-row justify-between items-center h-full container mx-auto'>
 					<Link href={'/'} onClick={() => setActiveId(0)}>
 						<Image
+							className='hidden md:block'
 							src={logo}
 							alt='logo'
 							width={150}
@@ -20,40 +24,46 @@ const Header = () => {
 							rel='preload'
 							as='image'
 						/>
+						<Image
+							className='block md:hidden'
+							src={logo}
+							alt='logo'
+							width='auto'
+							height={46}
+							priority
+							rel='preload'
+							as='image'
+						/>
 					</Link>
-					<ul className='flex flex-row'>
-						{menuItems.map(item => (
-							<li
-								key={item.id}
-								className='ml-8 last-of-type:-mr-4 text-[1.125rem]'
-							>
-								<Link
-									item={item}
-									href={item.href}
-									className={
-										activeId === item.id
-											? 'p-4 font-serif active'
-											: 'p-4 font-serif'
-									}
-									onClick={() => setActiveId(item.id)}
-								>
-									{item.linktext}
-								</Link>
-							</li>
-						))}
+					<ul className='hidden lg:flex flex-row'>
+						<MenuItems />
 					</ul>
+					<button
+						className='block lg:hidden'
+						onClick={() => {
+							setShow(true)
+						}}
+					>
+						<Image
+							className='block md:hidden'
+							src={menu}
+							height={24}
+							width={24}
+							alt='menu button'
+						/>
+						<Image
+							className='hidden md:block'
+							src={menu}
+							height={40}
+							width={40}
+							alt='menu button'
+						/>
+					</button>
+					<MobileMenu show={show} onClose={() => setShow(false)} />
 				</nav>
 			</header>
 		</div>
 	)
 }
-
-const menuItems = [
-	{ id: 0, linktext: 'home', href: '/' },
-	{ id: 1, linktext: 'my work', href: '/work' },
-	{ id: 2, linktext: 'services', href: '/services' },
-	{ id: 3, linktext: 'about me', href: '/about' },
-	{ id: 4, linktext: 'contact', href: '/contact' },
-]
 
 export default Header
