@@ -9,13 +9,12 @@ const Interests = () => {
 
 	return (
 		<>
-			<Cols className='menu-tabs mb-4 md:mb-12 lg:mb-16 xl:mb-20 col-span-12'>
+			<div className='menu-tabs sm:mb-4 md:mb-12 lg:mb-16 xl:mb-20 col-span-12 md:col-start-2 flex justify-between sm:justify-start'>
 				{interestItems.map(item => (
 					<div
 						key={item.id}
 						className={
-							'font-serif text-lightgreen text-sm md:text-md lg:text-lg col-span-3 md:col-start-' +
-							(2 + item.id * 3)
+							'font-serif text-lightgreen text-xs md:text-sm lg:text-md px-4'
 						}
 					>
 						<span
@@ -30,17 +29,19 @@ const Interests = () => {
 						</span>
 					</div>
 				))}
-			</Cols>
+			</div>
 			<Cols className='col-span-12 mb-20'>
-				<Image
-					src={'/images/' + interestItems[activeId].img}
-					alt={interestItems[activeId].alt}
-					width='1000'
-					height='1000'
-					className='w-full col-span-5 md:col-span-4 md:col-start-2'
-				/>
-				<article className='col-span-7 md:col-span-5 md:col-start-7 my-auto'>
-					<p className='text-xs md:text-sm lg:text-md'>
+				<div className='col-span-6 col-start-4 min-h-[12.5rem] sm:col-span-5 md:col-span-4 md:col-start-2 flex'>
+					<Image
+						src={interestItems[activeId].img}
+						alt={interestItems[activeId].alt}
+						width='1000'
+						height='1000'
+						className='m-auto'
+					/>
+				</div>
+				<article className='col-span-12 sm:col-span-7 md:col-span-5 md:col-start-7 my-auto'>
+					<p className='sm:text-xs lg:text-sm'>
 						{interestItems[activeId].text}
 					</p>
 				</article>
