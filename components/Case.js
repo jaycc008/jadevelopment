@@ -81,13 +81,19 @@ const Case = ({ item }) => {
 				<Image
 					src={item.img4}
 					alt={item.alt4}
-					className={`col-span-12 sm:col-span-10 sm:col-start-2 w-full max-w-none mb-8 sm:mb-12 md:mb-20 ${item.img4 ? '' : 'hidden'}`}
+					className={`col-span-12 sm:col-span-10 sm:col-start-2 w-full max-w-none mb-8 sm:mb-12 md:mb-20 ${
+						item.img4 ? '' : 'hidden'
+					}`}
 					width='1000'
 					height='1000'
 				/>
 
 				<div className='col-span-12 sm:col-span-8 sm:col-start-3'>
-					<p className={`text-sm sm:text-md md:text-lg lg:text-title font-serif mb-4 sm:mb-10 ${item.title4 ? '' : 'hidden'}`}>
+					<p
+						className={`text-sm sm:text-md md:text-lg lg:text-title font-serif mb-4 sm:mb-10 ${
+							item.title4 ? '' : 'hidden'
+						}`}
+					>
 						{item.title4}
 					</p>
 					<p className='text-xs sm:text-sm md:text-md  mb-8 sm:mb-12 md:mb-20'>
@@ -96,7 +102,7 @@ const Case = ({ item }) => {
 				</div>
 
 				<Cta
-					className='col-span-12 sm:col-span-8 sm:col-start-3  mb-8 sm:mb-12 md:mb-20'
+					className='col-span-12 sm:col-span-8 sm:col-start-3 mb-8 sm:mb-12 md:mb-20'
 					href={item.href}
 					target='_blank'
 					linkText='live link'
