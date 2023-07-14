@@ -7,6 +7,49 @@ html {
 	color: theme('colors.green');
 }
 
+.animate-icon img {
+	transition: all 0.1s;
+}
+
+.animate-icon:hover img {
+	margin-left: 8px;
+	transition: all 0.1s;
+}
+
+@keyframes bounce {
+	from {
+		margin-bottom: 12px;
+	}
+
+	to {
+		margin-bottom: 4px;
+	}
+}
+
+.animate-download {
+	position: relative;
+}
+
+.animate-download:hover img {
+	transition: all 0.3s;
+}
+
+.animate-download:hover img {
+	animation-duration: 0.8s;
+	animation-name: bounce;
+	animation-iteration-count: infinite;
+}
+
+.animate-download::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 16px;
+	bottom: 0;
+	right: 0;
+	background: theme('colors.yellow');
+}
+
 .active::after,
 .menu-tabs span:hover::after {
 	content: '';
