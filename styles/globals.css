@@ -96,7 +96,7 @@ footer nav li:hover a::after {
 }
 
 .underline-yellow:hover a::after {
-	height: 8px;
+	height: 4px;
 	bottom: 0;
 }
 

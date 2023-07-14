@@ -30,7 +30,7 @@ const Services = () => {
 							After working in FinTech, e-commerce, startups and even the Dutch
 							Ski Association I have seen my fair share of different projects.
 							With my diverse work experience, it was only logical to build my
-							own brand and so JA[Dutch for YES] Development was born.
+							own brand and so JA [Dutch for YES] Development was born.
 						</p>
 						<Cta href='/contact' className='mb-20' linkText='contact me' />
 					</div>

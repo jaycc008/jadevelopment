@@ -26,8 +26,8 @@ const About = () => {
 						alt='jack of hearts'
 						className='hidden md:block col-span-3 lg:col-span-2 lg:col-start-2'
 					/>
-					<div className='col-span-12 sm:col-span-10 md:col-span-6 lg:col-span-6 sm:col-start-2 md:col-start-5 pt-0 md:pt-30'>
-						<p className='mb-4 md:mb-8'>
+					<div className='col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-8 md:col-start-5 lg:col-span-7 lg:col-start-5 md:pt-30'>
+						<p className='mb-4 md:mb-8 text-xs sm:text-sm'>
 							Starting out as tester in 2009, I learned programming and
 							designing in 2012 once I started my Bachelor&quot;s Degree
 							Mediatechnology at the University of Applied Sciences Rotterdam.
@@ -36,7 +36,7 @@ const About = () => {
 							me being a fullstack developer with the know-how of design as well
 							as deployment.
 						</p>
-						<p className='mb-4 md:mb-8'>
+						<p className='mb-4 md:mb-8 text-xs sm:text-sm'>
 							After working in FinTech, e-commerce, startups and even the Dutch
 							Ski Association (wintersport.nl) I have seen my fair share of
 							different projects. With my diverse work experience, it was only

@@ -251,7 +251,7 @@ const Home = () => {
 					<Cta
 						href='/work'
 						className='order-7 col-span-12 sm:col-span-10 sm:col-start-2 mt-4 lg:mt-8'
-						linkText='view more'
+						linkText='view all work'
 					/>
 				</PageSection>
 				<Contact index='04' />
