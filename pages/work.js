@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, Fragment } from 'react'
 import Head from 'next/head'
 
 import design from '../public/icons/design.svg'
@@ -12,7 +12,7 @@ import KeyVisual from '../components/KeyVisual'
 import Contact from '../components/Contact'
 import PageSection from '../components/PageSection'
 import CaseModal from '../components/CaseModal'
-import { Cols } from '../components/Cols'
+import ListIcon from '../components/ListIcon'
 import Case from '../components/Case'
 import Cases from '../data/Cases.json'
 
@@ -123,26 +123,41 @@ const Work = () => {
 						alt='test icon'
 						className='col-span-2 col-start-11 xl:col-start-10 xl:col-span-1 hidden md:flex my-auto'
 					/>
-					<a
-						className='font-serif text-md text-yellow col-span-12 col-start-2'
-						href='/files/cv_jayce-ardon.pdf'
-						alt='download curriculum Vitae file'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						download cv
-						<Image className='inline ml-4' alt='' src={arrowDown} />
-					</a>
+					<div className='col-span-12 sm:col-start-2'>
+						<a
+							className='font-serif text-sm md:text-md text-yellow animate-download'
+							href='/files/cv_jayce-ardon.pdf'
+							alt='download curriculum Vitae file'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							download cv
+							<Image className='inline ml-4 mb-2' alt='' src={arrowDown} />
+						</a>
+					</div>
 				</PageSection>
 				<PageSection index='02' header='Cases' largerGapY={true}>
 					{Cases.map((item, index) =>
 						index % 2 === 0 ? (
-							<Cols className='col-span-12' key={index} id={item.slug}>
+							<Fragment key={index} id={item.slug}>
 								<div className='col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4'>
 									<h3 className='font-serif text-sm sm:text-md xl:text-lg xl:mb-10'>
 										{item.name}
 									</h3>
 									<p className='text-xs lg:text-sm'>{item.subtitle}</p>
+									<p className='font-bold mt-4'>Tech stack:</p>
+									<ul className='flex flex-row md:flex-col flex-wrap'>
+										{item.technologies.map(item => (
+											<ListIcon
+												key={item.src}
+												src={item.src}
+												alt={item.alt}
+												text={item.text}
+												width={45}
+												height={45}
+											/>
+										))}
+									</ul>
 								</div>
 								<Image
 									src={item.img1}
@@ -155,9 +170,9 @@ const Work = () => {
 										setActiveCase(index)
 									}}
 								/>
-							</Cols>
+							</Fragment>
 						) : (
-							<Cols className='col-span-12' key={index} id={item.slug}>
+							<Fragment key={index} id={item.slug}>
 								<Image
 									src={item.img1}
 									width={1000}
@@ -174,8 +189,21 @@ const Work = () => {
 										{item.name}
 									</h3>
 									<p className='text-xs lg:text-sm'>{item.subtitle}</p>
+									<p className='font-bold mt-4'>Tech stack:</p>
+									<ul className='flex flex-row md:flex-col flex-wrap'>
+										{item.technologies.map(item => (
+											<ListIcon
+												key={item.src}
+												src={item.src}
+												alt={item.alt}
+												text={item.text}
+												width={45}
+												height={45}
+											/>
+										))}
+									</ul>
 								</div>
-							</Cols>
+							</Fragment>
 						)
 					)}
 				</PageSection>
