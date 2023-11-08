@@ -2,9 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	@font-face {
+		font-family: Gloock;
+		font-weight: 400;
+		src: url(/fonts/Gloock-Regular.ttf);
+	}
+}
+
 html {
 	background-color: theme('colors.platinum');
 	color: theme('colors.green');
+}
+
+.animate-icon img {
+	transition: all 0.1s;
+}
+
+.animate-icon:hover img {
+	margin-left: 8px;
+	transition: all 0.1s;
+}
+
+@keyframes bounce {
+	from {
+		margin-bottom: 12px;
+	}
+
+	to {
+		margin-bottom: 4px;
+	}
+}
+
+.animate-download {
+	position: relative;
+}
+
+.animate-download:hover img {
+	transition: all 0.3s;
+}
+
+.animate-download:hover img {
+	animation-duration: 0.8s;
+	animation-name: bounce;
+	animation-iteration-count: infinite;
+}
+
+.animate-download::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 16px;
+	bottom: 0;
+	right: 0;
+	background: theme('colors.yellow');
 }
 
 .active::after,
@@ -43,14 +94,17 @@ nav li:hover a::after {
 	height: 2px;
 }
 
-.underline-yellow:hover a::after,
-footer nav li:hover a::after {
+.underline-yellow:hover a::after {
 	width: 100%;
 	left: 0;
 }
+footer nav li:hover a::after {
+	width: calc(100% - 36px);
+	right: 0;
+}
 
 .underline-yellow:hover a::after {
-	height: 8px;
+	height: 4px;
 	bottom: 0;
 }
 

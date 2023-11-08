@@ -32,18 +32,6 @@ module.exports = {
 				'Times',
 				'serif',
 			],
-			mono: [
-				'Roboto Mono for powerline',
-				'Roboto Mono',
-				'ui-monospace',
-				'SFMono-Regular',
-				'Menlo',
-				'Monaco',
-				'Consolas',
-				'Liberation Mono',
-				'Courier New',
-				'monospace',
-			],
 		},
 		extend: {
 			fontSize: {
