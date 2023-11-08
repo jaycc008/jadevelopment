@@ -18,7 +18,24 @@
 		"paragraph1": "Rob's website had a very old look-and-feel to it, think late 90’s. To create a new, fresh design they contacted Soulia Moor from Moor Design. I chipped in with some feedback on the design and did the programming. Besides that they also couldn’t access their files, so they wanted to be hosted on a different platform. In this process I guided them and contacted the previous developer to access their files.",
 		"paragraph2": "Let me guide you through my process! At first, to speed up the time it took to develop and deploy Soulia and me decided it was best to create a One Pager without a CMS for now. Since I did want to have this option for a later date, I decided to go with a robust setup of Vue, Vuetify and Nuxt.",
 		"paragraph3": "I did a market research and compared multiple hosting providers to find out which one was the best option for Rob and Lya. I always highly prefer ones with good customer service so that in the case something breaks, you have helpful service employees to talk to.",
-		"paragraph4": "In the end Cloud86 came out ahead of the other companies on customer service, price, uptime and speed. The website is currently in my aftercare, as such I update it regularly and redo parts of the site when requested. Check out the result through the link below."
+		"paragraph4": "In the end Cloud86 came out ahead of the other companies on customer service, price, uptime and speed. The website is currently in my aftercare, as such I update it regularly and redo parts of the site when requested. Check out the result through the link below.",
+		"technologies": [
+			{
+				"src": "/icons/vue.svg",
+				"alt": "vue icon",
+				"text": "Vue.js"
+			},
+			{
+				"src": "/icons/nuxt.svg",
+				"alt": "nuxt.js icon",
+				"text": "Nuxt.js"
+			},
+			{
+				"src": "/icons/vuetify.svg",
+				"alt": "vuetify icon",
+				"text": "Vuetify"
+			}
+		]
 	},
 	{
 		"name": "SorryThieves",
@@ -39,7 +56,24 @@
 		"paragraph1": "With this campaign page and their policies surrounding it, VanMoof really wants to demonstrate that they are done with bike theft. While their whole webshop was made with Magento, for this project they wanted to step out of that and have a React based webpage for this campaign within 3 days! Beforehand I was asked if I could make this happen, since the design was already done, I jumped at the opportunity and said \"YES let's do this!\"",
 		"paragraph2": "Since we had to move fast due to the high pressure of the tight deadline, we chose the technologies fast as well. All of a sudden I had to learn how to work with Material UI, Spring, JSS and TSX in about a day. In hindsight I think we may have gone a bit overboard with this amount of new technologies, but it was a great challenge nonetheless.",
 		"paragraph3": "It was very interesting to experience the level of communication between VanMoof, the CTO of Reach Digital and me. Everything went very fast and smooth, well thought out decisions were made on the fly and highly efficient discussions sprang up.",
-		"paragraph4": "All in all I definitely learned a lot from this on a technical level, but also on a personal level: That I should stand my ground and make a case for not using too many new technologies at once, especially when it is only for one page. I do love how the page turned out though, sadly VanMoof took it offline and it is only accessible through the waybackmachine."
+		"paragraph4": "All in all I definitely learned a lot from this on a technical level, but also on a personal level: That I should stand my ground and make a case for not using too many new technologies at once, especially when it is only for one page. I do love how the page turned out though, sadly VanMoof took it offline and it is only accessible through the waybackmachine.",
+		"technologies": [
+			{
+				"src": "/icons/react.svg",
+				"alt": "react icon",
+				"text": "React.js"
+			},
+			{
+				"src": "/icons/nextjs.svg",
+				"alt": "next.js icon",
+				"text": "Next.js"
+			},
+			{
+				"src": "/icons/react-spring.svg",
+				"alt": "react spring icon",
+				"text": "React Spring"
+			}
+		]
 	},
 	{
 		"name": "Wintersport",
@@ -63,6 +97,43 @@
 		"paragraph1": "Together with other wintersports enthusiasts I helped maintain and develop wintersport.nl - a platform dedicated to both recreational wintersports as well as the professional, olympic side of wintersports.",
 		"paragraph2": "While it may sound like maintaining the platform shouldn't take a lot of work, the platform is extremely multifacetted. The components of the website ranged from weathermodels to webcams, multiple forums to an online travel agency, very comprehensive reviewing options, a podcast and a gear platform and last but not least it also included a custom, well-built CMS. We, the developers, had our hands full and never ran out of things to do.",
 		"paragraph3": "There were some kinks in the cable when it came to the directness in which I was approached sometimes. We resolved this by having a good conversation about what our expectations were and afterwards this improved our communication greatly since we were all on the same page.",
-		"paragraph4": "Other than that I would say, I loved working with all of the new technologies I learnt here. In particular, I really liked working with VueJS, Vuetify, Apollo and GraphQL and this feeling was only enhanced by going to VueJS Amsterdam. There were also a lot of fringe technologies that were used like Knex.js and Pug, these technologies made sense in this project, but I wouldn't necesarily reuse them every time, as such I learnt more about decisionmaking when it comes to picking technologies."
+		"paragraph4": "Other than that I would say, I loved working with all of the new technologies I learnt here. In particular, I really liked working with VueJS, Vuetify, Apollo and GraphQL and this feeling was only enhanced by going to VueJS Amsterdam. There were also a lot of fringe technologies that were used like Knex.js and Pug, these technologies made sense in this project, but I wouldn't necesarily reuse them every time, as such I learnt more about decisionmaking when it comes to picking technologies.",
+		"technologies": [
+			{
+				"src": "/icons/vue.svg",
+				"alt": "vue icon",
+				"text": "Vue.js"
+			},
+			{
+				"src": "/icons/nuxt.svg",
+				"alt": "nuxt.js icon",
+				"text": "NuxtJS"
+			},
+			{
+				"src": "/icons/vuetify.svg",
+				"alt": "vuetify icon",
+				"text": "Vuetify"
+			},
+			{
+				"src": "/icons/graphql.svg",
+				"alt": "graphql icon",
+				"text": "GraphQL"
+			},
+			{
+				"src": "/icons/apollo.svg",
+				"alt": "apollo icon",
+				"text": "Apollo"
+			},
+			{
+				"src": "/icons/expressjs.svg",
+				"alt": "expressjs icon",
+				"text": "Express"
+			},
+			{
+				"src": "/icons/mysql.svg",
+				"alt": "my sequel icon",
+				"text": "MySQL"
+			}
+		]
 	}
 ]
