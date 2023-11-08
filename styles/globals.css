@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	@font-face {
+		font-family: Gloock;
+		font-weight: 400;
+		src: url(/fonts/Gloock-Regular.ttf);
+	}
+}
+
 html {
 	background-color: theme('colors.platinum');
 	color: theme('colors.green');
