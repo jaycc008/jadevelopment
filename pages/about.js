@@ -61,12 +61,14 @@ const About = () => {
 						<p className='text-sm xl:text-md font-serif col-span-5 xl:col-span-4 xl:col-start-2 2xl:col-start-1 2xl:col-span-3'>
 							When I say I love adventure, I truly mean that. While my first 31
 							years took place in my home country - The Netherlands - we moved
-							to Costa Rica in the fall of 2022. Do you want to go on an{' '}
-							<Link className='text-yellow font-bold' href='/contact'>
-								adventure
-							</Link>{' '}
-							with me?
+							to Costa Rica in the fall of 2022. Do you want to go on an
+							adventure with me?
 						</p>
+						<Cta
+							className='col-span-5 xl:col-span-4 xl:col-start-2 2xl:col-start-1 2xl:col-span-3'
+							href='/contact'
+							linkText='Contact me'
+						/>
 					</Cols>
 				</KeyVisual>
 				<PageSection index='02' header='Costa Rica based' className='lg:hidden'>
@@ -75,15 +77,15 @@ const About = () => {
 						alt='monkey looking through the trees'
 						className='col-span-12 sm:col-span-8 sm:col-start-3 hidden sm:block'
 					/>
-					<p className='sm:text-sm col-span-12'>
-						When I say I love adventure, I truly mean that. While my first 31
-						years took place in my home country - The Netherlands - we moved to
-						Costa Rica in the fall of 2022. Do you want to go on an{' '}
-						<Link className='text-yellow font-bold' href='/contact'>
-							adventure
-						</Link>{' '}
-						with me?
-					</p>
+					<div className='col-span-12'>
+						<p className='sm:text-sm'>
+							When I say I love adventure, I truly mean that. While my first 31
+							years took place in my home country - The Netherlands - we moved
+							to Costa Rica in the fall of 2022. Do you want to go on an
+							adventure with me?
+						</p>
+						<Cta href='/contact' linkText='Contact me' />
+					</div>
 				</PageSection>
 				<PageSection index='03' header='Personal interests'>
 					<Interests />
