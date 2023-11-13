@@ -139,13 +139,12 @@ const Work = () => {
 				<PageSection index='02' header='Cases' largerGapY={true}>
 					{Cases.map((item, index) =>
 						index % 2 === 0 ? (
-							<Fragment key={index} id={item.slug}>
+							<Fragment key={index}>
 								<div className='col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4'>
 									<h3 className='font-serif text-sm sm:text-md xl:text-lg xl:mb-10'>
 										{item.name}
 									</h3>
 									<p className='text-xs lg:text-sm'>{item.subtitle}</p>
-									<p className='font-bold mt-4'>Tech stack:</p>
 									<ul className='flex flex-row md:flex-col flex-wrap'>
 										{item.technologies.map(item => (
 											<ListIcon
@@ -160,6 +159,7 @@ const Work = () => {
 									</ul>
 								</div>
 								<Image
+									id={item.slug}
 									src={item.img1}
 									width={1000}
 									height={1000}
@@ -172,8 +172,9 @@ const Work = () => {
 								/>
 							</Fragment>
 						) : (
-							<Fragment key={index} id={item.slug}>
+							<Fragment key={index}>
 								<Image
+									id={item.slug}
 									src={item.img1}
 									width={1000}
 									height={1000}
@@ -189,7 +190,6 @@ const Work = () => {
 										{item.name}
 									</h3>
 									<p className='text-xs lg:text-sm'>{item.subtitle}</p>
-									<p className='font-bold mt-4'>Tech stack:</p>
 									<ul className='flex flex-row md:flex-col flex-wrap'>
 										{item.technologies.map(item => (
 											<ListIcon
