@@ -185,19 +185,13 @@ const Work = () => {
 									width={1000}
 									height={1000}
 									alt={item.alt1}
-									className={`order-${2 * index + 1} md:order-${
-										2 * index
-									} col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-7 w-full view`}
+									className='order-3 md:order-2 col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-7 w-full view'
 									onClick={() => {
 										setShow(true)
 										setActiveCase(index)
 									}}
 								/>
-								<div
-									className={`order-${2 * index} md:order-${
-										2 * index + 1
-									} col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4 md:col-start-9`}
-								>
+								<div className='order-2 md:order-3 col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4 md:col-start-9'>
 									<h3 className='font-serif text-sm sm:text-md xl:text-lg xl:mb-10'>
 										{item.name}
 									</h3>
