@@ -117,15 +117,27 @@ nav li:hover a::after,
 }
 
 .view:hover {
-	cursor: url('~/public/icons/view.svg'), pointer;
+	cursor: url('~/public/icons/view.svg') 50 50, auto;
+}
+
+.view-more:hover {
+	cursor: url('~/public/icons/view-more.svg') 50 50, auto;
+}
+
+.view-more img {
+	transition: all 0.3s;
+}
+
+.view-more:hover img {
+	transform: scale(1.05);
 }
 
 .copy:hover {
-	cursor: url('~/public/icons/copy.svg'), pointer;
+	cursor: url('~/public/icons/copy.svg') 50 50, auto;
 }
 
 .copy.copied:hover {
-	cursor: url('~/public/icons/copied.svg'), pointer;
+	cursor: url('~/public/icons/copied.svg') 50 50, auto;
 }
 
 .full-width {

@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Head from 'next/head'
-import Link from 'next/link'
 
 import jack from '../public/images/jack-of-hearts.svg'
 import monkey from '../public/images/monkey.png'
