@@ -36,7 +36,7 @@ const Services = () => {
 					</div>
 				</PageSection>
 				<PageSection index='02' header='Design'>
-					<p className='text-xs sm:text-sm md:text-md col-span-12 sm:col-start-2 sm:col-span-10 mb-4'>
+					<p className='text-xs sm:text-sm md:text-md col-span-12 sm:col-start-2 sm:col-span-10 mb-8 sm:mb-18'>
 						While I am not a designer by trade, I have a keen eye for design and
 						can create a beautiful UI for you myself or guide you in the design
 						process.
@@ -48,6 +48,8 @@ const Services = () => {
 							logo, these can be illustrative or textual. I can create yours
 							with either Illustrator or Figma.
 						</p>
+					</div>
+					<div className='col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-5 md:col-start-7'>
 						<h3 className='text-sm font-bold mb-4'>UI Design</h3>
 						<p className='text-xs md:text-sm'>
 							Before starting the programming phase, it is always good to start
@@ -58,7 +60,7 @@ const Services = () => {
 					</div>
 				</PageSection>
 				<PageSection index='03' header='Development'>
-					<p className='text-xs sm:text-sm md:text-md col-span-12 sm:col-start-2 sm:col-span-10 mb-4'>
+					<p className='text-xs sm:text-sm md:text-md col-span-12 sm:col-start-2 sm:col-span-10 mb-8 sm:mb-18'>
 						In my career I have worked mostly as a Fullstack developer and would
 						love to provide you with the full package as well.
 					</p>
@@ -84,7 +86,7 @@ const Services = () => {
 							older stacks like SQL/MySQL, PHP and .NET as well.
 						</p>
 					</div>
-					<div className='col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-5 md:col-start-7 m-auto'>
+					<div className='col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-5 md:col-start-7'>
 						<h3 className='text-sm font-bold mb-4'>Backend</h3>
 						<p className='text-xs md:text-sm md:mb-16'>
 							I love developing full custom websites with JAMStack, which
@@ -97,7 +99,7 @@ const Services = () => {
 					</div>
 				</PageSection>
 				<PageSection index='04' header='Deployment'>
-					<p className='text-xs sm:text-sm md:text-md col-span-12 sm:col-start-2 sm:col-span-10 mb-4'>
+					<p className='text-xs sm:text-sm md:text-md col-span-12 sm:col-start-2 sm:col-span-10 mb-8 sm:mb-18'>
 						I have seen many people struggle with the deployment of their
 						website, domain registration and management of their website in
 						general. Because of this, I like to help you from A to Z by helping
@@ -112,15 +114,8 @@ const Services = () => {
 							registered your domain but would like it to be hosted elsewhere, I
 							can manage the process of moving it as well.
 						</p>
-						<h3 className='text-sm font-bold mb-4'>
-							Continuous Integration and Delivery (CI/CD)
-						</h3>
-						<p className='text-xs md:text-sm'>
-							I can setup a workflow in which any changes to your site can be
-							put online as soon as they are ready.
-						</p>
 					</div>
-					<div className='col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-5 md:col-start-7 m-auto'>
+					<div className='col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-5 md:col-start-7'>
 						<h3 className='text-sm font-bold mb-4'>
 							Deployment of your website
 						</h3>
@@ -129,15 +124,22 @@ const Services = () => {
 							can visit it when they enter your domain. I will make sure your
 							website is set up correctly on your hosted domain.
 						</p>
+						<h3 className='text-sm font-bold mb-4'>
+							Continuous Integration and Delivery (CI/CD)
+						</h3>
+						<p className='text-xs md:text-sm'>
+							I can setup a workflow in which any changes to your site can be
+							deployed as soon as they are ready.
+						</p>
 					</div>
 				</PageSection>
 				<PageSection index='05' header='Aftercare'>
 					<p className='text-xs sm:text-sm md:text-md col-span-12 sm:col-start-2 sm:col-span-10 mb-4'>
 						After everything is set up, I will make sure you feel confident in
 						managing your content. I will give you the right tools to make sure
-						you know how to updates on your website. In case something goes
-						wrong, we can create an agreement in which I can continuously
-						provide my services.
+						you know how to make updates to your website. In case something goes
+						wrong or something needs to be added or changed, we can create an
+						agreement through which I can continuously provide my services.
 					</p>
 				</PageSection>
 				<Contact index='06' />
