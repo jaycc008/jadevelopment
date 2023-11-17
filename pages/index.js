@@ -5,27 +5,13 @@ import Head from 'next/head'
 import design from '../public/icons/design.svg'
 import develop from '../public/icons/develop.svg'
 import deploy from '../public/icons/deploy.svg'
-import vue from '../public/icons/vue.svg'
-import nuxt from '../public/icons/nuxt.svg'
-import vuetify from '../public/icons/vuetify.svg'
-import react from '../public/icons/react.svg'
-import nextjs from '../public/icons/nextjs.svg'
-import expressjs from '../public/icons/expressjs.svg'
-import graphql from '../public/icons/graphql.svg'
-import mysql from '../public/icons/mysql.svg'
-import apollo from '../public/icons/apollo.svg'
-import reactSpring from '../public/icons/react-spring.svg'
-
 import profilePic from '../public/images/jayce.jpg'
-import rob from '../public/images/rob.png'
-import sorryThieves from '../public/images/sorry-thieves.png'
-import wintersport from '../public/images/wintersport.png'
 
 import PageSection from '../components/PageSection'
 import Contact from '../components/Contact'
-import ListIcon from '../components/ListIcon'
 import { Cols } from '../components/Cols'
 import { Cta } from '../components/Cta'
+import Cases from '../data/Cases.json'
 
 const Home = () => {
 	return (
