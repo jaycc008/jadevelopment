@@ -9,6 +9,7 @@ import KeyVisual from '../components/KeyVisual'
 import PageSection from '../components/PageSection'
 import { Cta } from '../components/Cta'
 import { Cols } from '../components/Cols'
+import Contact from '../components/Contact'
 
 const About = () => {
 	return (
@@ -89,6 +90,7 @@ const About = () => {
 				<PageSection index='03' header='Personal interests'>
 					<Interests />
 				</PageSection>
+				<Contact index='04' />
 			</main>
 		</>
 	)
