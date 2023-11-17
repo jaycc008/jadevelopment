@@ -9,7 +9,7 @@ const Contact = () => {
 		<>
 			<Head>
 				<title>JA Development | Contact</title>
-				<meta name='viewport' content='initial-scale=1.0, width=device-width'/>
+				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
 			</Head>
 			<section className='flex h-[100vh]'>
 				<div className='flex-column justify-center m-auto'>
@@ -22,7 +22,7 @@ const Contact = () => {
 							onClick={e => {
 								const classes = e.target.classList
 								if (!classes.contains('copied')) classes.add('copied')
-								navigator.clipboard.writeText('jayce.ardon@gmail.com')
+								navigator.clipboard.writeText('jayce@ja-development.nl')
 								if (!isDesktop) {
 									toast('copied', {
 										toastId: 0,
@@ -35,7 +35,7 @@ const Contact = () => {
 								if (classes.contains('copied')) classes.remove('copied')
 							}}
 						>
-							jayce.ardon@gmail.com
+							jayce@ja-development.nl
 						</a>
 					</div>
 				</div>

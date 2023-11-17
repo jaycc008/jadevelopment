@@ -21,14 +21,14 @@ const Contact = ({ index }) => {
 						onClick={e => {
 							const classes = e.target.classList
 							if (!classes.contains('copied')) classes.add('copied')
-							navigator.clipboard.writeText('jayce.ardon@gmail.com')
+							navigator.clipboard.writeText('jayce@ja-development.nl')
 						}}
 						onMouseEnter={e => {
 							const classes = e.target.classList
 							if (classes.contains('copied')) classes.remove('copied')
 						}}
 					>
-						jayce.ardon@gmail.com
+						jayce@ja-development.nl
 					</a>
 				</div>
 			</div>
