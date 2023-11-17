@@ -19,8 +19,8 @@ const KeyVisual = ({
 		>
 			<div className='full-width min-h-1/2 keyvisual-gradient flex flex-col justify-end px-4 md:px-6 lg:px-8 xl:px-10'>
 				<div className='container mx-auto text-white my-4 md:my-12'>
-					<span className='text-xs'>{pageName}</span>
-					<h1 className='font-serif text-sm sm:text-md md:text-lg sm:w-10/12 md:w-8/12 xl:w-5/12'>
+					<span className='text-xs xl:text-sm'>{pageName}</span>
+					<h1 className='font-serif text-sm sm:text-md md:text-lg xl:text-xl sm:w-10/12 md:w-8/12 xl:w-5/12'>
 						{pageHeader}
 					</h1>
 					{children}
