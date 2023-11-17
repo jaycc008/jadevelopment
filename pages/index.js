@@ -134,111 +134,32 @@ const Home = () => {
 						alt='deployment icon'
 						className='col-span-2 col-start-11 xl:col-start-10 xl:col-span-1 hidden md:flex my-auto'
 					/>
-
-					<Cta href='/services' className='col-span-12 sm:col-start-2' />
+					<div className='col-span-12 sm:col-start-2'>
+						<Cta href='/services' />
+					</div>
 				</PageSection>
 
-				<PageSection index='03' header='My work'>
-					<div className='order-2 lg:order-1 col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-4 lg:col-start-2 lg:mt-30 xl:mt-50'>
-						<Link
-							href='/work#rob-stuurman'
-							className='hidden lg:block mb-8 xl:mb-16'
+				<PageSection index='03' header='My work' largerGapX={true}>
+					{Cases.map(item => (
+						<div
+							key={item}
+							className='col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-4'
 						>
-							<h3 className='font-serif text-lg text-lightgreen'>
-								Rob Stuurman
-							</h3>
-						</Link>
-						<ul className='flex flex-row sm:flex-col'>
-							<ListIcon src={vue} alt='vue icon' text='Vue.js' />
-							<ListIcon src={nuxt} alt='nuxt.js icon' text='NuxtJS' />
-							<ListIcon src={vuetify} alt='vuetify icon' text='Vuetify' />
-						</ul>
+							<h3 className='font-serif text-sm mb-6'>{item.name}</h3>
+							<Link href={`/work#${item.slug}`} className='view-more'>
+								<Image
+									src={item.img1}
+									alt={item.alt1}
+									className='w-full'
+									width='1000'
+									height='1000'
+								/>
+							</Link>
+						</div>
+					))}
+					<div className='col-span-12 sm:col-span-10 sm:col-start-2 lg:col-start-1 mt-4 lg:mt-8'>
+						<Cta href='/work' linkText='view all work' />
 					</div>
-
-					<div className='order-1 lg:order-2 col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-7 lg:col-start-6'>
-						<Link href='/work#rob-stuurman'>
-							<h3 className='font-serif text-sm sm:text-md md:text-lg text-lightgreen block lg:hidden mb-4 sm:mb-8'>
-								Rob Stuurman
-							</h3>
-							<Image
-								src={rob}
-								alt='Screenshot of robstuurman.nl website'
-								className='w-full sm:mb-8'
-							/>
-						</Link>
-					</div>
-
-					<div className='order-3 col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-7 lg:col-start-1 mt-8 lg:mt-10 xl:mt-50'>
-						<Link href='/work#sorry-thieves'>
-							<h3 className='font-serif text-sm sm:text-md md:text-lg text-lightgreen block lg:hidden mb-4 sm:mb-8'>
-								VanMoof - SorryThieves
-							</h3>
-							<Image
-								src={sorryThieves}
-								alt="Screenshot of VanMoof's SorryThieves campaign website"
-								className='w-full sm:mb-8'
-							/>
-						</Link>
-					</div>
-
-					<div className='order-4 col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-5 lg:col-start-9 lg:mt-40 xl:mt-100'>
-						<Link
-							href='/work#sorry-thieves'
-							className='hidden lg:block mb-8 xl:mb-16'
-						>
-							<h3 className='font-serif text-lg text-lightgreen'>
-								VanMoof - SorryThieves
-							</h3>
-						</Link>
-						<ul className='flex flex-row sm:flex-col'>
-							<ListIcon src={react} alt='react icon' text='React.js' />
-							<ListIcon src={nextjs} alt='next.js icon' text='Next.js' />
-							<ListIcon
-								src={reactSpring}
-								alt='react spring icon'
-								text='React Spring'
-							/>
-						</ul>
-					</div>
-
-					<div className='order-6 lg:order-5 col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-4 lg:col-start-2 lg:mt-40 xl:mt-50'>
-						<Link
-							href='/work#wintersport'
-							className='hidden lg:block mb-8 xl:mb-16 xl:mt-40 2xl:mt-50'
-						>
-							<h3 className='font-serif text-lg text-lightgreen'>
-								Wintersport
-							</h3>
-						</Link>
-						<ul className='flex flex-row sm:flex-col'>
-							<ListIcon src={vue} alt='vue icon' text='Vue.js' />
-							<ListIcon src={nuxt} alt='nuxt.js icon' text='NuxtJS' />
-							<ListIcon src={vuetify} alt='vuetify icon' text='Vuetify' />
-							<ListIcon src={graphql} alt='graphql icon' text='GraphQL' />
-							<ListIcon src={apollo} alt='apollo icon' text='Apollo' />
-							<ListIcon src={expressjs} alt='expressjs icon' text='Express' />
-							<ListIcon src={mysql} alt='my sequel icon' text='MySQL' />
-						</ul>
-					</div>
-
-					<div className='order-5 lg:order-6 col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-7 lg:col-start-6 mt-8 lg:10 xl:mt-50'>
-						<Link href='/work#wintersport'>
-							<h3 className='font-serif text-sm sm:text-md md:text-lg text-lightgreen block lg:hidden mb-4 sm:mb-8'>
-								Wintersport
-							</h3>
-							<Image
-								src={wintersport}
-								alt='Screenshot of wintersport.nl website'
-								className='w-full'
-							/>
-						</Link>
-					</div>
-
-					<Cta
-						href='/work'
-						className='order-7 col-span-12 sm:col-span-10 sm:col-start-2 mt-4 lg:mt-8'
-						linkText='view all work'
-					/>
 				</PageSection>
 				<Contact index='04' />
 			</main>
