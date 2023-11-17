@@ -20,6 +20,19 @@ const Work = () => {
 	const [show, setShow] = useState(false)
 	const [activeCase, setActiveCase] = useState(0)
 
+	const getOrderClass = index => {
+		switch (index) {
+			case 0:
+				return 'order-1'
+			case 1:
+				return 'order-2'
+			case 4:
+				return 'order-5'
+			case 5:
+				return 'order-6'
+		}
+	}
+
 	return (
 		<>
 			<Head>
@@ -141,9 +154,9 @@ const Work = () => {
 						index % 2 === 0 ? (
 							<Fragment key={index}>
 								<div
-									className={`order-${
+									className={`${getOrderClass(
 										2 * index
-									} col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4`}
+									)} col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4`}
 								>
 									<h3 className='font-serif text-sm sm:text-md xl:text-lg xl:mb-10'>
 										{item.name}
@@ -168,9 +181,9 @@ const Work = () => {
 									width={1000}
 									height={1000}
 									alt={item.alt1}
-									className={`order-${
+									className={`${getOrderClass(
 										2 * index + 1
-									} col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-7 md:col-start-6 w-full view`}
+									)} col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-7 md:col-start-6 w-full view`}
 									onClick={() => {
 										setShow(true)
 										setActiveCase(index)
@@ -185,13 +198,13 @@ const Work = () => {
 									width={1000}
 									height={1000}
 									alt={item.alt1}
-									className='order-3 md:order-2 col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-7 w-full view'
+									className='order-4 md:order-3 col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-7 w-full view'
 									onClick={() => {
 										setShow(true)
 										setActiveCase(index)
 									}}
 								/>
-								<div className='order-2 md:order-3 col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4 md:col-start-9'>
+								<div className='order-3 md:order-4 col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4 md:col-start-9'>
 									<h3 className='font-serif text-sm sm:text-md xl:text-lg xl:mb-10'>
 										{item.name}
 									</h3>
