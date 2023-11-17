@@ -140,12 +140,16 @@ const Work = () => {
 					{Cases.map((item, index) =>
 						index % 2 === 0 ? (
 							<Fragment key={index}>
-								<div className='col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4'>
+								<div
+									className={`order-${
+										2 * index
+									} col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4`}
+								>
 									<h3 className='font-serif text-sm sm:text-md xl:text-lg xl:mb-10'>
 										{item.name}
 									</h3>
-									<p className='text-xs lg:text-sm'>{item.subtitle}</p>
-									<ul className='flex flex-row md:flex-col flex-wrap'>
+									<p className='text-xs lg:text-sm mb-6'>{item.subtitle}</p>
+									<ul className='flex flex-row md:flex-col flex-wrap md:h-[196px]'>
 										{item.technologies.map(item => (
 											<ListIcon
 												key={item.src}
@@ -164,7 +168,9 @@ const Work = () => {
 									width={1000}
 									height={1000}
 									alt={item.alt1}
-									className='col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-7 md:col-start-6 w-full view'
+									className={`order-${
+										2 * index + 1
+									} col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-7 md:col-start-6 w-full view`}
 									onClick={() => {
 										setShow(true)
 										setActiveCase(index)
@@ -179,17 +185,23 @@ const Work = () => {
 									width={1000}
 									height={1000}
 									alt={item.alt1}
-									className='order-2 md:order-1 col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-7 w-full view'
+									className={`order-${2 * index + 1} md:order-${
+										2 * index
+									} col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-7 w-full view`}
 									onClick={() => {
 										setShow(true)
 										setActiveCase(index)
 									}}
 								/>
-								<div className='order-1 md:order-2 col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4 md:col-start-9'>
+								<div
+									className={`order-${2 * index} md:order-${
+										2 * index + 1
+									} col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-4 md:col-start-9`}
+								>
 									<h3 className='font-serif text-sm sm:text-md xl:text-lg xl:mb-10'>
 										{item.name}
 									</h3>
-									<p className='text-xs lg:text-sm'>{item.subtitle}</p>
+									<p className='text-xs lg:text-sm mb-6'>{item.subtitle}</p>
 									<ul className='flex flex-row md:flex-col flex-wrap'>
 										{item.technologies.map(item => (
 											<ListIcon
