@@ -3,7 +3,7 @@ const KeyVisual = ({
 	pageHeader,
 	src,
 	children,
-	bgPosition = 'bg-center lg:bg-right-top',
+	bgPosition = 'bg-center lg:bg-top-right',
 	className,
 }) => {
 	let bgClass
@@ -15,7 +15,7 @@ const KeyVisual = ({
 
 	return (
 		<section
-			className={`h-[50vh] sm:h-[70vh] md:h-[80vh] 2xl:h-[100vh] full-width bg-cover flex flex-col justify-end mb-10 md:mb-20 ${bgClass} ${bgPosition} ${className}`}
+			className={`h-[50vh] sm:h-[70vh] md:h-[80vh] 2xl:h-screen full-width bg-cover flex flex-col justify-end mb-10 md:mb-20 ${bgClass} ${bgPosition} ${className}`}
 		>
 			<div className='full-width min-h-1/2 keyvisual-gradient flex flex-col justify-end px-4 md:px-6 lg:px-8 xl:px-10'>
 				<div className='container mx-auto text-white my-4 md:my-12'>

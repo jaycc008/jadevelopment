@@ -30,7 +30,7 @@ const Work = () => {
 				<KeyVisual
 					pageName='My work'
 					pageHeader='Projects & Experience'
-					bgPosition='bg-[25%_bottom] sm:bg-[center_70%]'
+					bgPosition='bg-position-[25%_bottom] sm:bg-position-[center_70%]'
 				/>
 				<PageSection index='01' header='Experience'>
 					<div className='col-span-12 sm:col-start-2 sm:col-span-10 md:col-span-8 md:col-start-2 lg:col-span-6 lg:col-start-2'>

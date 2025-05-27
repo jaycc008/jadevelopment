@@ -11,7 +11,7 @@ const Contact = () => {
 				<title>JA Development | Contact</title>
 				<meta name='viewport' content='initial-scale=1.0, width=device-width'/>
 			</Head>
-			<section className='flex h-[100vh]'>
+			<section className='flex h-screen'>
 				<div className='flex-column justify-center m-auto'>
 					<p className='text-sm sm:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-center'>
 						Send me a message!

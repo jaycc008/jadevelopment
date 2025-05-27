@@ -49,7 +49,7 @@ const Home = () => {
 						alt='Profile picture of Jayce'
 						className='col-span-6 col-start-4 sm:col-span-4 sm:col-start-5 lg:col-start-1 w-full sm:mb-8 md:mb-0'
 					/>
-					<article className='col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-7 lg:col-start-6 xl:mt-[22.5rem]'>
+					<article className='col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-7 lg:col-start-6 xl:mt-90'>
 						<p className='font-sans text-xs sm:text-sm md:text-md mb-8'>
 							Hi, my name is{' '}
 							<span className='text-lightgreen font-bold'>Jayce Ardon</span> and

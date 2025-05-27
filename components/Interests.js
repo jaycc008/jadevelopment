@@ -31,7 +31,7 @@ const Interests = () => {
 				))}
 			</div>
 			<Cols className='col-span-12 mb-20'>
-				<div className='col-span-6 col-start-4 min-h-[12.5rem] sm:col-span-5 md:col-span-4 md:col-start-2 flex'>
+				<div className='col-span-6 col-start-4 min-h-50 sm:col-span-5 md:col-span-4 md:col-start-2 flex'>
 					<Image
 						src={interestItems[activeId].img}
 						alt={interestItems[activeId].alt}
