@@ -16,7 +16,7 @@ const Services = () => {
 				<KeyVisual
 					pageName='Services'
 					pageHeader='Development & deployment with an eye for design'
-					bgPosition='bg-[30%_center]'
+					bgPosition='bg-position-[30%_center]'
 				/>
 				<PageSection index='01' header='Intake'>
 					<div className='col-span-12 sm:col-span-10 sm:col-start-2 md:col-span-8 md:col-start-2 lg:col-start-2 lg:col-span-7'>

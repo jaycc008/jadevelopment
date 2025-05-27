@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
+import { useState } from 'react'
 
 import design from '../public/icons/design.svg'
 import develop from '../public/icons/develop.svg'
@@ -8,12 +9,15 @@ import deploy from '../public/icons/deploy.svg'
 import profilePic from '../public/images/jayce.jpg'
 
 import PageSection from '../components/PageSection'
+import LandingModal from '../components/LandingModal'
 import Contact from '../components/Contact'
 import { Cols } from '../components/Cols'
 import { Cta } from '../components/Cta'
 import Cases from '../data/Cases.json'
 
 const Home = () => {
+	const [show, setShow] = useState(true)
+
 	return (
 		<>
 			<Head>
@@ -45,7 +49,7 @@ const Home = () => {
 						alt='Profile picture of Jayce'
 						className='col-span-6 col-start-4 sm:col-span-4 sm:col-start-5 lg:col-start-1 w-full sm:mb-8 md:mb-0'
 					/>
-					<article className='col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-7 lg:col-start-6 xl:mt-[22.5rem]'>
+					<article className='col-span-12 sm:col-span-10 sm:col-start-2 lg:col-span-7 lg:col-start-6 xl:mt-90'>
 						<p className='font-sans text-xs sm:text-sm md:text-md mb-8'>
 							Hi, my name is{' '}
 							<span className='text-lightgreen font-bold'>Jayce Ardon</span> and
@@ -162,6 +166,10 @@ const Home = () => {
 					</div>
 				</PageSection>
 				<Contact index='04' />
+				<LandingModal 
+					show={show}
+					onClose={() => setShow(false)}
+					/>
 			</main>
 		</>
 	)

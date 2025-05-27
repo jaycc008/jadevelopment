@@ -30,7 +30,7 @@ const Work = () => {
 				<KeyVisual
 					pageName='My work'
 					pageHeader='Projects & Experience'
-					bgPosition='bg-[25%_bottom] sm:bg-[center_70%]'
+					bgPosition='bg-position-[25%_bottom] sm:bg-position-[center_70%]'
 				/>
 				<PageSection index='01' header='Experience'>
 					<div className='col-span-12 sm:col-start-2 sm:col-span-10 md:col-span-8 md:col-start-2 lg:col-span-6 lg:col-start-2'>
@@ -126,7 +126,7 @@ const Work = () => {
 					<div className='col-span-12 sm:col-start-2'>
 						<a
 							className='font-serif text-sm md:text-md text-yellow animate-download'
-							href='/files/cv_jayce-ardon.pdf'
+							href='/files/Curriculum Vitae - English.pdf'
 							alt='download curriculum Vitae file'
 							target='_blank'
 							rel='noopener noreferrer'
