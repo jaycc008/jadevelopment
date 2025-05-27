@@ -126,7 +126,7 @@ const Work = () => {
 					<div className='col-span-12 sm:col-start-2'>
 						<a
 							className='font-serif text-sm md:text-md text-yellow animate-download'
-							href='/files/cv_jayce-ardon.pdf'
+							href='/files/Curriculum Vitae - English.pdf'
 							alt='download curriculum Vitae file'
 							target='_blank'
 							rel='noopener noreferrer'

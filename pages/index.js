@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Head from 'next/head'
+import { useState } from 'react'
 
 import design from '../public/icons/design.svg'
 import develop from '../public/icons/develop.svg'
@@ -8,12 +9,15 @@ import deploy from '../public/icons/deploy.svg'
 import profilePic from '../public/images/jayce.jpg'
 
 import PageSection from '../components/PageSection'
+import LandingModal from '../components/LandingModal'
 import Contact from '../components/Contact'
 import { Cols } from '../components/Cols'
 import { Cta } from '../components/Cta'
 import Cases from '../data/Cases.json'
 
 const Home = () => {
+	const [show, setShow] = useState(true)
+
 	return (
 		<>
 			<Head>
@@ -162,6 +166,10 @@ const Home = () => {
 					</div>
 				</PageSection>
 				<Contact index='04' />
+				<LandingModal 
+					show={show}
+					onClose={() => setShow(false)}
+					/>
 			</main>
 		</>
 	)
