@@ -34,7 +34,7 @@ const LandingModal = ({ show, onClose }) => {
 				<div className='flex inner-modal h-full w-full bg-platinum xl:px-10 lg:px-8 md:px-6 px-4'>
 					<div className='m-auto w-xs h-120 md:shadow-lg'>
 						<Image
-							className="mx-auto mb-12"
+							className="mx-auto md:mt-12 mb-12"
 							src={logo}
 							alt='logo'
 							width='auto'
@@ -43,7 +43,7 @@ const LandingModal = ({ show, onClose }) => {
 							rel='preload'
 							as='image'
 						/>
-						<div className="container mx-4">
+						<div className="container md:mx-8 mx-4">
 							<p className='text-xs font-bold mb-2'>Reach out:</p>
 							<ul className='mb-8'>
 								<li>Jayce Ardon</li>
@@ -56,7 +56,7 @@ const LandingModal = ({ show, onClose }) => {
 								</li>
 							</ul>
 							<p className='text-xs font-bold mb-2'>Portfolio</p>
-							<p className='text-lightgreen underline' onClick={onClose}>Or visit my portfolio</p>
+							<a className='text-lightgreen underline cursor-pointer' onClick={onClose}>Or visit my portfolio</a>
 						</div>
 					</div>
 				</div>
